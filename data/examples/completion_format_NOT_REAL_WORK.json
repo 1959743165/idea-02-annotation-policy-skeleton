@@ -1,0 +1,12 @@
+{
+  "event_id": "REPLACE_WITH_ACTUAL_PENDING_REQUEST_ID",
+  "status": "failed",
+  "active_intervals": [
+    {
+      "annotator_id": "SYNTHETIC_FORMAT_EXAMPLE",
+      "start_utc": "2026-01-01T00:00:00Z",
+      "end_utc": "2026-01-01T00:01:00Z"
+    }
+  ],
+  "reason": "SYNTHETIC FORMAT EXAMPLE ONLY: no expert work actually occurred. Replace all fields with actual logged work before import."
+}

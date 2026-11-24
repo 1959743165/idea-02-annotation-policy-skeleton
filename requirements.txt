@@ -1,0 +1,6 @@
+# Verified CPU environment uses Python 3.12.14; these versions require >=3.11.
+numpy==2.3.5
+scipy==1.17.0
+Pillow==13.0.0
+matplotlib==3.10.8
+PyYAML==6.0.3

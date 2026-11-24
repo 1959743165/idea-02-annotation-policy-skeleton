@@ -1,0 +1,4 @@
+COMMAND ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/scripts/check_package.py", "--root", "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy", "--verify-manifest", "--report", "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/extracted_integrity.json"]
+CWD /workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/unrelated_cwd
+EXIT 0
+{"passed": true, "files": 2234, "python_ast": 43, "errors": 0, "manifest_written": false, "report": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/extracted_integrity.json"}

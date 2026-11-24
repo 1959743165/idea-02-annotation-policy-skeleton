@@ -1,0 +1,14 @@
+# Executable numerical fixture, not a model of real human annotators or labor cost.
+seed: 17
+dataset:
+  output_dir: runs/synthetic_data
+  manifest: runs/synthetic_data/manifest.jsonl
+  n_specimens: 180
+  image_size: 48
+detector:
+  grid_size: 8
+  epochs: 60
+  learning_rate: 0.035
+  l2: 0.001
+  class_weights: [1.0, 3.0, 4.0]
+output_dir: runs/reference_detector

@@ -1,0 +1,562 @@
+{
+  "status": "SYNTHETIC_MATRIX_SOFTWARE_CHECK_NOT_PUBLICATION_RESULTS",
+  "variants": 17,
+  "rows": [
+    {
+      "variant": "initial_only",
+      "split": "test",
+      "paid_actions": 0,
+      "failed_actions": 0,
+      "spent_minutes": 0.0,
+      "normalized_auc": 0.152849381895158,
+      "final_risk": 0.152849381895158
+    },
+    {
+      "variant": "initial_only",
+      "split": "device_test",
+      "paid_actions": 0,
+      "failed_actions": 0,
+      "spent_minutes": 0.0,
+      "normalized_auc": 0.23021744382127324,
+      "final_risk": 0.2302174438212732
+    },
+    {
+      "variant": "random",
+      "split": "test",
+      "paid_actions": 6,
+      "failed_actions": 0,
+      "spent_minutes": 19.10356824190922,
+      "normalized_auc": 0.15582019518608659,
+      "final_risk": 0.15830423670459542
+    },
+    {
+      "variant": "random",
+      "split": "device_test",
+      "paid_actions": 6,
+      "failed_actions": 0,
+      "spent_minutes": 19.10356824190922,
+      "normalized_auc": 0.22847453173881424,
+      "final_risk": 0.2302174438212732
+    },
+    {
+      "variant": "cheapest",
+      "split": "test",
+      "paid_actions": 17,
+      "failed_actions": 1,
+      "spent_minutes": 18.663182740439844,
+      "normalized_auc": 0.15993347920521367,
+      "final_risk": 0.16523825640124445
+    },
+    {
+      "variant": "cheapest",
+      "split": "device_test",
+      "paid_actions": 17,
+      "failed_actions": 1,
+      "spent_minutes": 18.663182740439844,
+      "normalized_auc": 0.23405042110096658,
+      "final_risk": 0.2363436260607305
+    },
+    {
+      "variant": "uncertainty_per_minute",
+      "split": "test",
+      "paid_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 18.840043857535797,
+      "normalized_auc": 0.1388475627092342,
+      "final_risk": 0.13524087304163934
+    },
+    {
+      "variant": "uncertainty_per_minute",
+      "split": "device_test",
+      "paid_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 18.840043857535797,
+      "normalized_auc": 0.21012319227907678,
+      "final_risk": 0.19434420079873183
+    },
+    {
+      "variant": "disagreement_rule",
+      "split": "test",
+      "paid_actions": 10,
+      "failed_actions": 1,
+      "spent_minutes": 19.40125599357543,
+      "normalized_auc": 0.14753799765698583,
+      "final_risk": 0.15118963556433063
+    },
+    {
+      "variant": "disagreement_rule",
+      "split": "device_test",
+      "paid_actions": 10,
+      "failed_actions": 1,
+      "spent_minutes": 19.40125599357543,
+      "normalized_auc": 0.20982847336162913,
+      "final_risk": 0.19434420079873183
+    },
+    {
+      "variant": "new_image_only",
+      "split": "test",
+      "paid_actions": 5,
+      "failed_actions": 0,
+      "spent_minutes": 17.517092654631913,
+      "normalized_auc": 0.15359921665254034,
+      "final_risk": 0.15824908432019108
+    },
+    {
+      "variant": "new_image_only",
+      "split": "device_test",
+      "paid_actions": 5,
+      "failed_actions": 0,
+      "spent_minutes": 17.517092654631913,
+      "normalized_auc": 0.22370538543222862,
+      "final_risk": 0.2120585614272891
+    },
+    {
+      "variant": "boundary_only",
+      "split": "test",
+      "paid_actions": 12,
+      "failed_actions": 1,
+      "spent_minutes": 18.64434943269703,
+      "normalized_auc": 0.152849381895158,
+      "final_risk": 0.152849381895158
+    },
+    {
+      "variant": "boundary_only",
+      "split": "device_test",
+      "paid_actions": 12,
+      "failed_actions": 1,
+      "spent_minutes": 18.64434943269703,
+      "normalized_auc": 0.23021744382127318,
+      "final_risk": 0.2302174438212732
+    },
+    {
+      "variant": "missing_only",
+      "split": "test",
+      "paid_actions": 8,
+      "failed_actions": 1,
+      "spent_minutes": 18.08703791834339,
+      "normalized_auc": 0.14649813429875197,
+      "final_risk": 0.1458638582424686
+    },
+    {
+      "variant": "missing_only",
+      "split": "device_test",
+      "paid_actions": 8,
+      "failed_actions": 1,
+      "spent_minutes": 18.08703791834339,
+      "normalized_auc": 0.2172011834824843,
+      "final_risk": 0.2027197474392852
+    },
+    {
+      "variant": "class_only",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 18.858362852745596,
+      "normalized_auc": 0.1515442783721452,
+      "final_risk": 0.14333358257960496
+    },
+    {
+      "variant": "class_only",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 18.858362852745596,
+      "normalized_auc": 0.22100218855451806,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "review_only",
+      "split": "test",
+      "paid_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 19.702972012341668,
+      "normalized_auc": 0.15141567036970627,
+      "final_risk": 0.15433897395082005
+    },
+    {
+      "variant": "review_only",
+      "split": "device_test",
+      "paid_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 19.702972012341668,
+      "normalized_auc": 0.21240796389742306,
+      "final_risk": 0.20391108732136767
+    },
+    {
+      "variant": "reimage_only",
+      "split": "test",
+      "paid_actions": 4,
+      "failed_actions": 0,
+      "spent_minutes": 17.87224980694664,
+      "normalized_auc": 0.152849381895158,
+      "final_risk": 0.152849381895158
+    },
+    {
+      "variant": "reimage_only",
+      "split": "device_test",
+      "paid_actions": 4,
+      "failed_actions": 0,
+      "spent_minutes": 17.87224980694664,
+      "normalized_auc": 0.22262489950028538,
+      "final_risk": 0.21678950809431044
+    },
+    {
+      "variant": "learned_full",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.15014831113684393,
+      "final_risk": 0.1458638582424686
+    },
+    {
+      "variant": "learned_full",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.218664849643902,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "without_disagreement",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 18.68248481810355,
+      "normalized_auc": 0.14649042394599565,
+      "final_risk": 0.14333358257960496
+    },
+    {
+      "variant": "without_disagreement",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 18.68248481810355,
+      "normalized_auc": 0.21535220591998247,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "action_only",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 0,
+      "spent_minutes": 19.293074236893055,
+      "normalized_auc": 0.14966569547233494,
+      "final_risk": 0.14333358257960496
+    },
+    {
+      "variant": "action_only",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 0,
+      "spent_minutes": 19.293074236893055,
+      "normalized_auc": 0.2187059514963035,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "without_propensity_weighting",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.1499755993468874,
+      "final_risk": 0.1458638582424686
+    },
+    {
+      "variant": "without_propensity_weighting",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.2181741346192585,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "without_cost_ranking",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281413,
+      "normalized_auc": 0.15063378511661743,
+      "final_risk": 0.1458638582424686
+    },
+    {
+      "variant": "without_cost_ranking",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281413,
+      "normalized_auc": 0.21626278280500938,
+      "final_risk": 0.1996016075597707
+    },
+    {
+      "variant": "without_logcost_residual_correction",
+      "split": "test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.15014831113684393,
+      "final_risk": 0.1458638582424686
+    },
+    {
+      "variant": "without_logcost_residual_correction",
+      "split": "device_test",
+      "paid_actions": 18,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416,
+      "normalized_auc": 0.218664849643902,
+      "final_risk": 0.1996016075597707
+    }
+  ],
+  "all_variants_locked_before_test": true,
+  "primary_learned_minus_uncertainty": {
+    "test": {
+      "difference_direction": "B_minus_A",
+      "horizon_minutes": 20.0,
+      "primary_normalized_auc": {
+        "difference_B_minus_A": 0.011300748427609725,
+        "estimate_A": 0.13884756270923418,
+        "estimate_B": 0.1501483111368439,
+        "ci": [
+          0.0025463626464784735,
+          0.023495960518305378
+        ],
+        "confidence": 0.95,
+        "paired_permutation_p_two_sided": 0.029850746268656716,
+        "n_specimens": 16,
+        "unit": "specimen",
+        "valid_bootstrap_draws": 200,
+        "method": "paired_specimen_bootstrap_and_block_label_exchange",
+        "valid_permutation_draws": 200,
+        "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+      },
+      "endpoint_comparisons": {
+        "risk": {
+          "difference_B_minus_A": 0.010622985200829299,
+          "estimate_A": 0.13524087304163931,
+          "estimate_B": 0.1458638582424686,
+          "ci": [
+            0.0,
+            0.020973670814332886
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 0.24378109452736318,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "critical_miss_rate": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.0,
+          "estimate_B": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 199,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "false_clear_rate": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.0,
+          "estimate_B": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "critical_instance_recall": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.6666666666666666,
+          "estimate_B": 0.6666666666666666,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 199,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "normal_false_alarm_rate": {
+          "difference_B_minus_A": null,
+          "estimate_A": null,
+          "estimate_B": null,
+          "ci": null,
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": null,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 0,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "reason": "zero_eligible_denominator"
+        }
+      },
+      "predeclared_family_holm_p": {
+        "normalized_auc": 0.08955223880597014,
+        "critical_miss_rate": 1.0,
+        "false_clear_rate": 1.0
+      },
+      "paired_unit": "specimen",
+      "cohort_sha256": "28a38db10e2cf8e849fdc79f991c9125e99747fae6b3885295bd23d740d95029",
+      "limitations": [
+        "Confidence intervals condition on each already-frozen trajectory.",
+        "Repeat independent acquisition runs and expert outcomes to study policy-level uncertainty.",
+        "Repeated budget points are correlated measurements, not extra independent samples.",
+        "No test-risk information may be fed back into action selection, early stopping or threshold choice."
+      ]
+    },
+    "device_test": {
+      "difference_direction": "B_minus_A",
+      "horizon_minutes": 20.0,
+      "primary_normalized_auc": {
+        "difference_B_minus_A": 0.008541657364825317,
+        "estimate_A": 0.21012319227907675,
+        "estimate_B": 0.21866484964390207,
+        "ci": [
+          -0.012574176919553244,
+          0.028499142747865403
+        ],
+        "confidence": 0.95,
+        "paired_permutation_p_two_sided": 0.4228855721393035,
+        "n_specimens": 16,
+        "unit": "specimen",
+        "valid_bootstrap_draws": 200,
+        "method": "paired_specimen_bootstrap_and_block_label_exchange",
+        "valid_permutation_draws": 200,
+        "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+      },
+      "endpoint_comparisons": {
+        "risk": {
+          "difference_B_minus_A": 0.005257406761038835,
+          "estimate_A": 0.19434420079873183,
+          "estimate_B": 0.19960160755977066,
+          "ci": [
+            -0.024259937850962542,
+            0.03583276485129723
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 0.6467661691542289,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "critical_miss_rate": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.0,
+          "estimate_B": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "false_clear_rate": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.0,
+          "estimate_B": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "critical_instance_recall": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.14285714285714285,
+          "estimate_B": 0.14285714285714285,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 200,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        },
+        "normal_false_alarm_rate": {
+          "difference_B_minus_A": 0.0,
+          "estimate_A": 0.0,
+          "estimate_B": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "paired_permutation_p_two_sided": 1.0,
+          "n_specimens": 16,
+          "unit": "specimen",
+          "valid_bootstrap_draws": 137,
+          "method": "paired_specimen_bootstrap_and_block_label_exchange",
+          "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+          "valid_permutation_draws": 200,
+          "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+        }
+      },
+      "predeclared_family_holm_p": {
+        "normalized_auc": 1.0,
+        "critical_miss_rate": 1.0,
+        "false_clear_rate": 1.0
+      },
+      "paired_unit": "specimen",
+      "cohort_sha256": "0d6ad7621c55cc15e1aee0f7495743a0c8e3e7dffe3fd74cf1fd712d10dc3267",
+      "limitations": [
+        "Confidence intervals condition on each already-frozen trajectory.",
+        "Repeat independent acquisition runs and expert outcomes to study policy-level uncertainty.",
+        "Repeated budget points are correlated measurements, not extra independent samples.",
+        "No test-risk information may be fed back into action selection, early stopping or threshold choice."
+      ]
+    }
+  },
+  "no_superiority_assertion": true,
+  "real_detector_or_human_experiment_performed": false
+}

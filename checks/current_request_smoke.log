@@ -1,0 +1,7 @@
+experiment: passed
+device_holdout_evaluation: passed
+offpolicy_single_step: passed
+visualization: passed
+power_planning: passed
+unit_tests: passed
+{"status": "PASSED_SYNTHETIC_SOFTWARE_SMOKE", "checks": 16, "wall_seconds": 16.95583098300267, "report": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/smoke_results.json"}

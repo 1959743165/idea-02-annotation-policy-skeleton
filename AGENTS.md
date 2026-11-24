@@ -2,33 +2,31 @@
 
 ## 研究目标
 
-在相同专家人分钟预算内，联合选择焊缝影像病例与标注改进动作，检验学习策略能否比按检测不确定性与预计成本排序的基线更快降低独立测试风险。主终点为 60 专家人分钟内的归一化风险曲线面积（nAUC），越低越好。真实实验开始前固定任务类别、独立参考、预算和比较方法。
+研究在固定专家人分钟预算下，联合选择焊缝影像病例与标注改进动作，检验学习策略能否比按检测不确定性与预计成本排序的基线更快降低独立测试风险。主终点是60专家人分钟内的归一化风险曲线面积（nAUC），越低越好。真实实验开始前冻结任务类别、参考标准、预算和统计比较。
 
-## 数据路径
+## 数据路径与状态
 
-- `data/raw/`：获授权的原始影像，仅在受控环境保存，不提交真实数据到 Git。
-- `data/metadata/`：匿名试样、焊缝、原图、设备、机构与采集会话关联表。
-- `data/annotations/`：各专家独立初读及修订版本。
-- `data/manifests/`：数据角色清单和哈希，角色包括 seed_train、policy_train、policy_val、reward、acquisition_pool、detector_val、test、device_test。
-- `data/action_logs/`：随机动作概率、完成状态、专家活动时间和实际成本。
-- `data/references/`：独立评估参考，访问权限须与训练及策略选择隔离。
+- `data/examples/` 为合成格式样例，`runs/smoke/data/` 为已执行的合成数据。
+- `data/raw/` 预留授权真实原图，不提交真实原图到公开 GitHub。
+- `data/metadata/` 预留匿名试样、焊缝、原图、设备、机构与采集会话关系表。
+- `data/annotations/` 预留专家独立初读与版本，`data/action_logs/` 预留随机动作及实测人时。
+- `data/manifests/` 预留八个数据角色的清单，`data/references/` 预留独立评估参考。
+- 字段和访问边界见 `data/README.md` 与 `docs/数据获取与防泄漏.md`。
 
 ## 代码入口
 
-- `scripts/prepare_data.py`：数据入库、谱系分组与角色划分，待实现。
-- `scripts/collect_pilot.py`：随机动作预实验，待实现。
-- `scripts/train_detector.py`：检测器训练与预测，待实现。
-- `scripts/train_policy.py`：动作收益及成本模型训练，待实现。
-- `scripts/run_budget.py`：固定预算下执行策略，待实现。
-- `scripts/evaluate.py`：轨迹锁定后的独立评估，待实现。
+- `scripts/smoke_test.py` 运行完整合成流程和单元测试。
+- `scripts/run_experiment.py` 运行合成随机 pilot、策略学习、预算实验和独立评估。
+- `scripts/run_matrix.py` 运行17项合成基线与消融。
+- `scripts/train_detector.py`、`scripts/predict_detector.py`、`scripts/train_policy.py`、`scripts/run_budget.py`、`scripts/evaluate.py` 是分步入口。
+- `scripts/prepare_pilot_request.py`、`scripts/import_human_action.py`、`scripts/attach_reward.py` 提供真实人工动作接入协议。
+- `scripts/prepare_data.py` 目前为空占位。代码实现位于 `src/annotation_policy/`，测试位于 `tests/`，依赖见 `requirements.txt`。
 
-当前 `scripts/` 中的文件为空占位，不可运行。已有 CPU 参考实现位于原实验包 `D:\D02\idea_02_annotation_revision`，迁入时需保留数据角色与测试隔离约束。
+## 实验结果与论文
 
-## 论文模板路径
+- `runs/smoke/` 和 `runs/matrix/` 包含已完成的合成软件检查、模型、日志、指标与图表。
+- `results_templates/` 是真实实验的空结果表，状态保持 `NOT_RUN_REAL_EXPERIMENT`。
+- `paper/main.tex` 是论文初稿骨架，`paper/references.bib` 为参考文献，`paper/figures/` 和 `paper/tables/` 放论文选用的图表。
+- `docs/四周初稿计划.md` 列出一个月的工作安排与各阶段交付物。
 
-- `paper/main.tex`：论文正文占位。
-- `paper/references.bib`：参考文献占位。
-- `paper/tables/`：主结果、成本和消融表格占位。
-- `paper/figures/`：风险曲线等图占位。
-
-真实结果须与合成软件检查结果分开标记。不能把专家多数票直接当成独立真值，或把同一试样的关联影像分到不同数据角色。
+提交论文结果前，核对数据授权和来源分组。专家多数票不能直接充当独立真值，同一试样的关联影像不能跨训练与测试角色。合成图表应始终标记为合成演示。

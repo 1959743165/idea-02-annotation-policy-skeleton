@@ -1,0 +1,23 @@
+{
+  "status": "SYNTHETIC_SOFTWARE_FIXTURE_NOT_REAL_EXPERT_DATA",
+  "seed": 17,
+  "n_specimens": 180,
+  "image_size": 48,
+  "role_counts": {
+    "seed_train": 32,
+    "policy_train": 32,
+    "policy_val": 16,
+    "reward": 20,
+    "acquisition_pool": 32,
+    "detector_val": 16,
+    "test": 16,
+    "device_test": 16
+  },
+  "class_ontology": {
+    "0": "background",
+    "1": "round_synthetic_indication",
+    "2": "linear_synthetic_indication"
+  },
+  "ground_truth_access": "oracle/truth.jsonl is forbidden as a policy/detector feature source",
+  "publication_claim": "No human disagreement distribution, industrial risk reduction or true labor cost is established."
+}

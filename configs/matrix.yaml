@@ -1,0 +1,21 @@
+# Executable CPU baseline/ablation matrix; all labels and costs are synthetic.
+base_config: configs/smoke.yaml
+evaluate_splits: [test, device_test]
+variants:
+  - {name: initial_only, strategy: no_action, policy_overrides: {}}
+  - {name: random, strategy: random, policy_overrides: {}}
+  - {name: cheapest, strategy: cheapest, policy_overrides: {}}
+  - {name: uncertainty_per_minute, strategy: uncertainty_per_minute, policy_overrides: {}}
+  - {name: disagreement_rule, strategy: disagreement_rule, policy_overrides: {}}
+  - {name: new_image_only, strategy: fixed_new_image, policy_overrides: {}}
+  - {name: boundary_only, strategy: fixed_boundary, policy_overrides: {}}
+  - {name: missing_only, strategy: fixed_missing, policy_overrides: {}}
+  - {name: class_only, strategy: fixed_class, policy_overrides: {}}
+  - {name: review_only, strategy: fixed_review, policy_overrides: {}}
+  - {name: reimage_only, strategy: fixed_reimage, policy_overrides: {}}
+  - {name: learned_full, strategy: learned_gain_per_minute, policy_overrides: {}}
+  - {name: without_disagreement, strategy: learned_gain_per_minute, policy_overrides: {feature_mode: without_disagreement}}
+  - {name: action_only, strategy: learned_gain_per_minute, policy_overrides: {feature_mode: action_only}}
+  - {name: without_propensity_weighting, strategy: learned_gain_per_minute, policy_overrides: {propensity_weighting: false}}
+  - {name: without_cost_ranking, strategy: learned_gain_without_cost, policy_overrides: {}}
+  - {name: without_logcost_residual_correction, strategy: learned_gain_per_minute, policy_overrides: {cost_residual_correction: false}}

@@ -1,0 +1,3 @@
+status,group_type,group_id,strategy,n_specimens,n_positive_critical_images,nAUC,delta_vs_primary_baseline,ci_low,ci_high,unknown_fraction,selection_weighting,notes
+NOT_RUN_REAL_EXPERIMENT,device,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,设备与同型号设备区别；缺来源键不能宣称外部
+NOT_RUN_REAL_EXPERIMENT,expert_panel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,原参考组与动作组是否重叠必须记录

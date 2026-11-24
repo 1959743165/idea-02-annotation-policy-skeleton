@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent expert reading sidecar (real collection or explicitly synthetic example)",
+  "type": "object",
+  "required": [
+    "image_id",
+    "specimen_id",
+    "annotator_id",
+    "read_id",
+    "is_repeat",
+    "is_synthetic",
+    "display_settings",
+    "quality_assessment",
+    "labelmap_path",
+    "confidence",
+    "additional_information_requested",
+    "active_intervals"
+  ],
+  "properties": {
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specimen_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "annotator_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "read_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "labelmap_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_repeat": {
+      "type": "boolean"
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "parent_read_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "display_settings": {
+      "type": "object",
+      "required": [
+        "source_bit_depth",
+        "window_level_protocol"
+      ],
+      "properties": {
+        "source_bit_depth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "window_level_protocol": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "quality_assessment": {
+      "type": "object",
+      "required": [
+        "readable",
+        "reason"
+      ],
+      "properties": {
+        "readable": {
+          "enum": [
+            "yes",
+            "no",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "additional_information_requested": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "none",
+          "higher_contrast_view",
+          "repeat_exposure",
+          "other_view",
+          "scale_metadata",
+          "procedure_record",
+          "adjudication"
+        ]
+      }
+    },
+    "active_intervals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/interval"
+      }
+    }
+  },
+  "$defs": {
+    "interval": {
+      "type": "object",
+      "required": [
+        "annotator_id",
+        "start_utc",
+        "end_utc"
+      ],
+      "properties": {
+        "annotator_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "$comment": "Raw reads are preserved. A repeated read is not another independent expert. Confidence is subjective certainty, not correctness."
+}

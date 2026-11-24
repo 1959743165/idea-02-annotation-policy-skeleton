@@ -1,0 +1,2 @@
+status,annotator_id,site_group,n_first_reads,n_repeats,washout_days,mean_person_minutes,existence_agreement,class_agreement,matched_boundary_IoU,unknown_fraction,recognized_repeat_cases,notes
+NOT_RUN_REAL_EXPERIMENT,NA,NA,NA,NA,14,NA,NA,NA,NA,NA,NA,14天是计划最小间隔；无真实专家数据

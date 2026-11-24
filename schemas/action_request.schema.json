@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local pending action request; no expert action has run",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_id",
+    "status",
+    "protocol_id",
+    "image_id",
+    "specimen_id",
+    "split",
+    "is_synthetic",
+    "action",
+    "quoted_max_cost_minutes",
+    "before_state_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specimen_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "before_state_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "REQUESTED_NOT_EXECUTED"
+    },
+    "split": {
+      "enum": [
+        "policy_train",
+        "policy_val",
+        "acquisition_pool"
+      ]
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "action": {
+      "enum": [
+        "new_image",
+        "boundary",
+        "missing",
+        "class",
+        "review",
+        "reimage"
+      ]
+    },
+    "quoted_max_cost_minutes": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    }
+  },
+  "$comment": "A request for reimage records an annotation/acquisition study proposal; it does not operate equipment."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_CURRENT_REQUEST_SOFTWARE_CHECKS",
+  "timestamp_utc": "2026-11-07T16:04:00.598830+00:00",
+  "python": "3.12.14",
+  "python_ast_and_compile_files": 43,
+  "smoke_checks": 16,
+  "unit_tests": 83,
+  "smoke_wall_seconds": 16.95583098300267,
+  "specimens": 180,
+  "images": 180,
+  "pilot_train_actions": 32,
+  "pilot_val_actions": 16,
+  "real_expert_or_real_detector_experiment_performed": false,
+  "current_run_log": "current_request_smoke.log",
+  "current_smoke_report": "current_request_smoke_results.json",
+  "unit_test_log": "current_request_unit_tests.log",
+  "matrix_reexecuted_for_this_delivery": false,
+  "existing_matrix_retained_with_unchanged_source": true,
+  "documentation_only_fixes": [
+    "Correct acquisition_session field name to match schema and grouping implementation.",
+    "Clarify specimen_id bootstrap versus higher-level correlated physical groups."
+  ],
+  "primary_references_reopened_this_request": [
+    "R04 ActiveLab arXiv:2301.11856",
+    "R05 NUTMEG ACL Anthology 2025.emnlp-main.144",
+    "R06 NeurIPS 2024 Adaptive Labeling official proceedings"
+  ],
+  "visual_check": "Opened current risk_vs_expert_minutes.png: readable axes and legend, explicit synthetic disclaimer, no model-superiority fabrication."
+}

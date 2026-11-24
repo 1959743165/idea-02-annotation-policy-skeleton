@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local detector command response",
+  "type": "object",
+  "required": [
+    "request_id",
+    "status",
+    "backend"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "completed"
+    },
+    "backend": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "training_specimen_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "predictions_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "predictions_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "model_path",
+        "model_sha256",
+        "training_specimen_ids"
+      ]
+    },
+    {
+      "required": [
+        "predictions_path",
+        "predictions_sha256"
+      ]
+    }
+  ]
+}

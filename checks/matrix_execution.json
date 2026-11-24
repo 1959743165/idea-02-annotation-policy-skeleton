@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-07T12:49:21.252599+00:00",
+  "status": "PASSED_EXECUTED_MATRIX_AUDIT",
+  "command": "python scripts/run_matrix.py --manifest runs/smoke/data/manifest.jsonl --pilot-dir runs/smoke/experiment/pilot --output-dir runs/matrix",
+  "observed_exit_code": 0,
+  "variants": 17,
+  "evaluated_rows": 34,
+  "test_splits": [
+    "device_test",
+    "test"
+  ],
+  "all_variants_locked_before_test": true,
+  "summary_sha256": "dc2eeb16f1433728e54a628f04616d7156310a6f5bb45cf0b5785082e712724d",
+  "wall_time_not_measured": true,
+  "all_data_synthetic": true
+}

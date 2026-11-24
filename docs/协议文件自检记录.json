@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "checked_date": "2026-11-07",
+  "scope": "Protocol/reference/result-template nonempty, CSV widths, JSON, reference IDs, BibTeX braces/keys, 17 implemented matrix mapping. This check does not test code or real data.",
+  "files_checked": 22,
+  "manual_characters": 38031,
+  "baseline_and_ablation_rows": 33,
+  "implemented_matrix_variants": 17,
+  "verified_reference_entries": 11,
+  "errors": [],
+  "remediation_log": [
+    "First document check detected blank trailing rows in 9 CSV templates; rewrote CSV using csv.writer; repeated all checks successfully."
+  ],
+  "files": [
+    {
+      "file": "docs/实验方案_执行手册.md",
+      "bytes": 37794
+    },
+    {
+      "file": "docs/专家分歧与动作标注规范.md",
+      "bytes": 14198
+    },
+    {
+      "file": "docs/数据获取与防泄漏.md",
+      "bytes": 10280
+    },
+    {
+      "file": "docs/统计分析计划.md",
+      "bytes": 12363
+    },
+    {
+      "file": "docs/真实模型与RapidX接入.md",
+      "bytes": 13540
+    },
+    {
+      "file": "references/references.bib",
+      "bytes": 4506
+    },
+    {
+      "file": "references/verification_registry.json",
+      "bytes": 3942
+    },
+    {
+      "file": "references/可核验参考文献.md",
+      "bytes": 8745
+    },
+    {
+      "file": "references/待核验与接入清单.md",
+      "bytes": 2453
+    },
+    {
+      "file": "results_templates/README.md",
+      "bytes": 1622
+    },
+    {
+      "file": "results_templates/专家与算力账本.csv",
+      "bytes": 341
+    },
+    {
+      "file": "results_templates/专家重复读取.csv",
+      "bytes": 302
+    },
+    {
+      "file": "results_templates/主结果.csv",
+      "bytes": 2684
+    },
+    {
+      "file": "results_templates/分组外部结果.csv",
+      "bytes": 408
+    },
+    {
+      "file": "results_templates/动作支持与成本.csv",
+      "bytes": 901
+    },
+    {
+      "file": "results_templates/失败案例.csv",
+      "bytes": 316
+    },
+    {
+      "file": "results_templates/成对比较.csv",
+      "bytes": 614
+    },
+    {
+      "file": "results_templates/数据入组计划.csv",
+      "bytes": 772
+    },
+    {
+      "file": "results_templates/数据问题登记.csv",
+      "bytes": 218
+    },
+    {
+      "file": "results_templates/预期图表与图注.md",
+      "bytes": 2243
+    },
+    {
+      "file": "results_templates/预注册填报.json",
+      "bytes": 1614
+    },
+    {
+      "file": "configs/baseline_matrix.csv",
+      "bytes": 7282
+    }
+  ],
+  "root_followup_note": "Historical component snapshot. Root clarified paired-training D_i baseline and counted both before/after fits in the compute budget. Final content is covered by checks/file_manifest.json."
+}

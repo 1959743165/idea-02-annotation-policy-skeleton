@@ -1,0 +1,10 @@
+COMMAND ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/scripts/smoke_test.py", "--output-dir", "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/fresh_run"]
+CWD /workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/unrelated_cwd
+EXIT 0
+experiment: passed
+device_holdout_evaluation: passed
+offpolicy_single_step: passed
+visualization: passed
+power_planning: passed
+unit_tests: passed
+{"status": "PASSED_SYNTHETIC_SOFTWARE_SMOKE", "checks": 16, "wall_seconds": 17.123907502000293, "report": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/fresh_run/smoke_results.json"}

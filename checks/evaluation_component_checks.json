@@ -1,0 +1,129 @@
+{
+  "status": "COMPLETED_SOFTWARE_CHECKS_ONLY",
+  "timestamp_utc": "2026-11-07T12:38:54.219777+00:00",
+  "real_experts_used": false,
+  "real_training_performed": false,
+  "python_files": [
+    {
+      "path": "src/annotation_policy/schema.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "43efacea43568a183179119fb26398f9eb633fced5f5e7dbb98a2a17947cdac8"
+    },
+    {
+      "path": "src/annotation_policy/splits.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "e66ea5841b517a1ab60dbdf2c90df7cb7cee2ed1da605c26bf65bcb2da0957d5"
+    },
+    {
+      "path": "src/annotation_policy/evaluation.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "7955ea88d37d89a6bbeca73b1ce1124b479bb5b746082898ab0b6457f8e6d3ce"
+    },
+    {
+      "path": "src/annotation_policy/statistics.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "cc45a4e9c7fd7172a16bd9093ccd68c45e2ed54838aacd60893e3de2a43160d5"
+    },
+    {
+      "path": "src/annotation_policy/visualization.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "56b951249e9b1d3c420814cff38ce92e935378fccc4c71c8bafb8d3a0f9cf728"
+    },
+    {
+      "path": "src/annotation_policy/offpolicy.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "0fc78ad3d9acecd0585ca1b36552e4be336dd3c83745425ff0ae606bfe3065a3"
+    },
+    {
+      "path": "scripts/validate_dataset.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "e270d358cdb9ae782ad7fa64de239c00936727c709b67f89d48b771b0a3d8452"
+    },
+    {
+      "path": "scripts/estimate_power.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "55857c0e1564c3c89ebb636c79f298776bd379aff9eb33106c818d552da4c5eb"
+    },
+    {
+      "path": "scripts/visualize.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "4f68815e77165043d2288f41e28dc68200a69a891d4ab3f4481528892b717495"
+    },
+    {
+      "path": "scripts/offpolicy_evaluate.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "f0345a0d1cf044864dc534962933e87b391bdc59e77306b2f8841a0df0decb7c"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "bc86f2907e766d6325ea93c2ca9f6ffb105469a4cf093c26c95ded49117f0baa"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "dfcd1c602760d52486cdd752e612a20607fb4cc178cf50f033acb3792afa2f75"
+    },
+    {
+      "path": "tests/test_splits.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "2a3702a1896484d6a5e37bf5bbe13c3b2b0587e074eb10fea6a9f44da0952522"
+    },
+    {
+      "path": "tests/test_offpolicy.py",
+      "nonempty": true,
+      "ast_parse": "PASS",
+      "sha256": "f76bee2832e0eedad712bb8cee11e52f91f411c5746c66f865dcfb9c371ca136"
+    }
+  ],
+  "documentation_nonempty": true,
+  "official_unit_log": "runs/smoke/logs/unit_tests.log",
+  "official_unit_log_sha256": "18700a476756e53157829272b1304c59d108864c9a3171cff73c1d7fc3a681ab",
+  "official_unit_log_tail": [
+    "test_step_area_no_future_interpolation (test_statistics.StatisticsTests.test_step_area_no_future_interpolation) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 82 tests in 2.137s",
+    "",
+    "OK"
+  ],
+  "visual_review": [
+    {
+      "path": "runs/smoke/figures/risk_vs_expert_minutes.png",
+      "sha256": "5c17e2578414945d06b3c390520a8361d37ae7818fb1c72cf8e14d2fbe25435f",
+      "visually_inspected": true,
+      "review": "PASS: readable labels, no visible clipping or overlap, explicit synthetic disclaimer"
+    },
+    {
+      "path": "runs/smoke/figures/nauc_specimen_ci.png",
+      "sha256": "388d136b3a86a1b18b55a6c3783530fa5d7a00ddbeee062cdadfa91516948c8a",
+      "visually_inspected": true,
+      "review": "PASS: readable labels, no visible clipping or overlap, explicit synthetic disclaimer"
+    },
+    {
+      "path": "runs/smoke/figures/action_time_allocation.png",
+      "sha256": "27444518c782912f9b7c999349e5ec5f0e73451fe5a74061156f3ade13b94df5",
+      "visually_inspected": true,
+      "review": "PASS: readable labels, no visible clipping or overlap, explicit synthetic disclaimer"
+    }
+  ],
+  "limitations": [
+    "Synthetic software validation does not establish the research hypothesis.",
+    "The learned policy is not required or forced to outperform the baselines.",
+    "Figures and test intervals condition on the executed synthetic trajectory."
+  ],
+  "root_followup_note": "Historical component snapshot. Root subsequently added an explicitly declared historical-seed-only validation exception and its test; final suite/AST are in unit_tests_final.log and package_integrity.json."
+}

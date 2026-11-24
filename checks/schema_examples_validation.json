@@ -1,0 +1,137 @@
+{
+  "status": "PASSED_FORMAT_AND_SEMANTIC_CHECKS",
+  "schema_instance_validation_available": false,
+  "records": {
+    "public_manifest.jsonl": 8,
+    "measured_action_logs.jsonl": 3,
+    "expert_read_format.json": 1,
+    "completion_format_NOT_REAL_WORK.json": 1
+  },
+  "semantic_public_examples": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "images": 8,
+    "specimens": 8,
+    "all_synthetic": true,
+    "public_annotations": 13,
+    "group_check": {
+      "ok": true,
+      "protocol": "within_domain",
+      "errors": [],
+      "warnings": [],
+      "connected_groups": 8,
+      "leaked_groups": [],
+      "split_summary": {
+        "seed_train": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_0"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "policy_train": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_1"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "policy_val": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_1"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "reward": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_0"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "acquisition_pool": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_1"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "detector_val": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_0"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "test": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_0"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "device_test": {
+          "images": 1,
+          "specimens": 1,
+          "devices": [
+            "SYNTH_DEVICE_3"
+          ],
+          "sites": [
+            "SYNTH_SITE_EXTERNAL"
+          ]
+        }
+      },
+      "limitations": [
+        "Identifier checks cannot certify provenance correctness.",
+        "Perceptual near-duplicates need an independent source audit.",
+        "Repeated expert reads remain correlated with the same specimen."
+      ]
+    },
+    "manifest_sha256": "0897774230e6639d7ee5727686e7dc8c4a62ca31905d511dd8329d64536d81e0",
+    "limitations": [
+      "Valid JSON and group IDs do not replace expert annotation quality audits.",
+      "Public quotes are budgets/limits, not observed prospective action costs."
+    ]
+  },
+  "record_count_semantics": "JSON parsed record counts; not a claim of full JSON Schema specification validation",
+  "json_schema_specification_validation": "NOT_RUN: jsonschema is not installed; all seven schema JSON files parse, with expected root type and Draft2020-12 declaration. Semantic validators below ran.",
+  "schema_json_files": [
+    "expert_read.schema.json",
+    "detector_wrapper_response.schema.json",
+    "action_completion.schema.json",
+    "independent_reference.schema.json",
+    "action_request.schema.json",
+    "public_manifest.schema.json",
+    "measured_action_log.schema.json"
+  ],
+  "action_log_semantic_check": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "records": 3
+  },
+  "parsed_format_examples_have_human_work": false
+}

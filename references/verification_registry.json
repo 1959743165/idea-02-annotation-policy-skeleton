@@ -1,0 +1,106 @@
+{
+  "verified_on": "2026-11-07",
+  "scope": "Metadata and relevant claims verified from primary sources; not a reproduction of source experiments.",
+  "entries": [
+    {
+      "id": "R01",
+      "year": 2024,
+      "status": "PUBLISHED_JOURNAL",
+      "primary_url": "https://link.springer.com/article/10.1007/s40194-024-01710-y",
+      "doi": "10.1007/s40194-024-01710-y",
+      "evidence": "publisher metadata and user-provided P13 full text",
+      "data_or_code_access": "not acquired"
+    },
+    {
+      "id": "R02",
+      "year": 2025,
+      "status": "PUBLISHED_JOURNAL",
+      "primary_url": "https://link.springer.com/article/10.1007/s10921-025-01186-w",
+      "doi": "10.1007/s10921-025-01186-w",
+      "evidence": "publisher metadata and user-provided P02",
+      "data_or_code_access": "download and license pending"
+    },
+    {
+      "id": "R03",
+      "year": 2025,
+      "status": "PUBLISHED_JOURNAL",
+      "primary_url": "https://doi.org/10.1016/j.softx.2025.102328",
+      "doi": "10.1016/j.softx.2025.102328",
+      "evidence": "user-provided P03 full text and author repository citation; DOI webpage fetch failed",
+      "data_or_code_access": "software not run"
+    },
+    {
+      "id": "R03a",
+      "year": null,
+      "status": "OFFICIAL_REPOSITORY_LICENSE_UNCLEAR",
+      "primary_url": "https://github.com/bit628/RapidX-Annotator",
+      "doi": null,
+      "evidence": "official README inspected; states LICENSE.txt empty and model modules/weights incomplete",
+      "data_or_code_access": "no code bundled; license/commit and timing API pending"
+    },
+    {
+      "id": "R04",
+      "year": 2023,
+      "status": "PUBLISHED_WORKSHOP",
+      "primary_url": "https://arxiv.org/abs/2301.11856",
+      "doi": "10.48550/arXiv.2301.11856",
+      "evidence": "arXiv metadata explicitly lists ICLR 2023 Workshop on Trustworthy ML",
+      "data_or_code_access": "algorithm not reproduced"
+    },
+    {
+      "id": "R05",
+      "year": 2025,
+      "status": "PUBLISHED_MAIN_CONFERENCE",
+      "primary_url": "https://aclanthology.org/2025.emnlp-main.144/",
+      "doi": "10.18653/v1/2025.emnlp-main.144",
+      "evidence": "ACL Anthology metadata and abstract",
+      "data_or_code_access": "not reproduced"
+    },
+    {
+      "id": "R06",
+      "year": 2024,
+      "status": "PUBLISHED_MAIN_CONFERENCE",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/830c927e4e9c9a457d476c145514fb56-Abstract-Conference.html",
+      "doi": "10.52202/079017-2268",
+      "evidence": "official NeurIPS proceedings metadata and abstract",
+      "data_or_code_access": "not reproduced"
+    },
+    {
+      "id": "R07",
+      "year": 2025,
+      "status": "PREPRINT_ONLY_VERIFIED",
+      "primary_url": "https://arxiv.org/abs/2504.09341",
+      "doi": "10.48550/arXiv.2504.09341",
+      "evidence": "arXiv metadata and abstract; venue acceptance not verified",
+      "data_or_code_access": "not reproduced"
+    },
+    {
+      "id": "R08",
+      "year": 2025,
+      "status": "PUBLISHED_CONFERENCE_INDEXED_2026",
+      "primary_url": "https://ieeexplore.ieee.org/document/11402126/",
+      "doi": "10.1109/BigData66926.2025.11402126",
+      "evidence": "IEEE abstract and conference date; official author page verifies authors/pages",
+      "data_or_code_access": "not reproduced"
+    },
+    {
+      "id": "R09",
+      "year": 2026,
+      "status": "PUBLISHED_WORKSHOP",
+      "primary_url": "https://aclanthology.org/2026.pandora-1.4/",
+      "doi": "10.18653/2026.pandora-1.4",
+      "evidence": "ACL Anthology metadata and abstract",
+      "data_or_code_access": "not reproduced"
+    },
+    {
+      "id": "R10",
+      "year": 2011,
+      "status": "PUBLISHED_CONFERENCE_FOUNDATION",
+      "primary_url": "https://arxiv.org/abs/1103.4601",
+      "doi": "10.48550/arXiv.1103.4601",
+      "evidence": "arXiv metadata and ICML publication note",
+      "data_or_code_access": "method reference only"
+    }
+  ]
+}
+

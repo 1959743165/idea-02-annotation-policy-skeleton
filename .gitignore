@@ -2,6 +2,7 @@ data/raw/**
 data/annotations/**
 data/references/**
 data/action_logs/**
+references/downloads/
 !data/raw/.gitkeep
 !data/annotations/.gitkeep
 !data/references/.gitkeep
@@ -9,9 +10,9 @@ data/action_logs/**
 __pycache__/
 *.pyc
 .venv/
-runs/
-*.npz
-*.png
-*.jpg
-*.tif
-*.tiff
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.pdf

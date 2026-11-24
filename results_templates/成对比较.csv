@@ -1,0 +1,3 @@
+status,hypothesis,baseline,method,endpoint,direction,horizon_minutes,delta,ci_low,ci_high,p_raw,p_adjusted,comparison_family,independent_unit,interpretation
+NOT_RUN_REAL_EXPERIMENT,H1,uncertainty_per_minute,learned_gain_per_minute,normalized_risk_minute_AUC,method_minus_baseline,60,NA,NA,NA,NA,NA,primary_single,specimen_and_acquisition_block,计划最小有意义差-0.02；尚无结果
+NOT_RUN_REAL_EXPERIMENT,H2,uncertainty_per_minute,learned_gain_per_minute,critical_miss_rate,method_minus_baseline,60,NA,NA,NA,NA,NA,protective_secondary,specimen_cluster,计划非劣代理界+0.02；不是工程安全界

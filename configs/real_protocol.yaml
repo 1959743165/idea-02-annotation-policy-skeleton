@@ -1,0 +1,30 @@
+# Planning only: no real image, expert-time or detector result has been obtained.
+status: NOT_RUN_REAL_EXPERIMENT
+objective: annotation_action_selection_under_natural_expert_disagreement
+expert_budget_minutes: [15, 30, 60, 120]
+primary_horizon_minutes: 60
+primary_comparison: learned_gain_per_minute_vs_uncertainty_per_minute
+primary_endpoint: normalized_risk_minute_AUC
+minimum_meaningful_nAUC_reduction: 0.02
+primary_direction: learned_minus_baseline
+alpha: 0.05
+confidence_level: 0.95
+bootstrap_repetitions: 10000
+acquisition_replicates: 10
+detector_training_seeds: [17, 29, 43]
+expert_panel_size: 3
+repeat_read_fraction: 0.20
+repeat_read_washout_days: 14
+randomized_disagreement_action_cases_planning: 300
+actions: [new_image, boundary, missing, class, review, reimage]
+primary_actions_per_case: 1
+policy_test_feedback_allowed: false
+expert_majority_is_ground_truth: false
+live_repeat_imaging_automatically_triggered: false
+model_backend: REPLACE_WITH_AUDITED_LOCAL_DETECTOR_ADAPTER
+dataset_manifest: REPLACE_WITH_AUTHORIZED_REAL_MANIFEST
+annotation_export: REPLACE_WITH_RAPIDX_OR_OTHER_VERIFIED_EXPORT
+notes:
+  - Sample counts and budgets are planning assumptions; replace using a blinded pilot.
+  - Critical defect and false-clear risk require independent adjudication and a frozen task definition.
+  - This image research package does not issue industrial acceptance decisions.

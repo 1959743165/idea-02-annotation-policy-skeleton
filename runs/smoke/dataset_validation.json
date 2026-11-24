@@ -1,0 +1,123 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "images": 180,
+  "specimens": 180,
+  "all_synthetic": true,
+  "public_annotations": 296,
+  "group_check": {
+    "ok": true,
+    "protocol": "within_domain",
+    "errors": [],
+    "warnings": [],
+    "connected_groups": 180,
+    "leaked_groups": [],
+    "split_summary": {
+      "seed_train": {
+        "images": 32,
+        "specimens": 32,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "policy_train": {
+        "images": 32,
+        "specimens": 32,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "policy_val": {
+        "images": 16,
+        "specimens": 16,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "reward": {
+        "images": 20,
+        "specimens": 20,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "acquisition_pool": {
+        "images": 32,
+        "specimens": 32,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "detector_val": {
+        "images": 16,
+        "specimens": 16,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "test": {
+        "images": 16,
+        "specimens": 16,
+        "devices": [
+          "SYNTH_DEVICE_0",
+          "SYNTH_DEVICE_1",
+          "SYNTH_DEVICE_2"
+        ],
+        "sites": [
+          "SYNTH_SITE_MAIN"
+        ]
+      },
+      "device_test": {
+        "images": 16,
+        "specimens": 16,
+        "devices": [
+          "SYNTH_DEVICE_3"
+        ],
+        "sites": [
+          "SYNTH_SITE_EXTERNAL"
+        ]
+      }
+    },
+    "limitations": [
+      "Identifier checks cannot certify provenance correctness.",
+      "Perceptual near-duplicates need an independent source audit.",
+      "Repeated expert reads remain correlated with the same specimen."
+    ]
+  },
+  "manifest_sha256": "2b30cc1f1ceacdeab055663e46800efbf8b4a2e023f62a4bb7b47a34730b89e4",
+  "limitations": [
+    "Valid JSON and group IDs do not replace expert annotation quality audits.",
+    "Public quotes are budgets/limits, not observed prospective action costs."
+  ]
+}

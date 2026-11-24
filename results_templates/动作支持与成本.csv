@@ -1,0 +1,7 @@
+status,action,eligible_cases,assigned_cases,completed,failed,overrun,positive_reward,zero_reward,negative_reward,unmeasured_reward,median_person_minutes,p90_person_minutes,mean_cost_prediction_error,minimum_propensity,effective_sample_size,notes
+NOT_RUN_REAL_EXPERIMENT,new_image,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删
+NOT_RUN_REAL_EXPERIMENT,boundary,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删
+NOT_RUN_REAL_EXPERIMENT,missing,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删
+NOT_RUN_REAL_EXPERIMENT,class,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删
+NOT_RUN_REAL_EXPERIMENT,review,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删
+NOT_RUN_REAL_EXPERIMENT,reimage,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,完整记录人时；失败不删

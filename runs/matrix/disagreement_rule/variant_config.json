@@ -1,0 +1,22 @@
+{
+  "variant": {
+    "name": "disagreement_rule",
+    "strategy": "disagreement_rule",
+    "policy_overrides": {}
+  },
+  "policy": {
+    "ridge_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "propensity_weighting": true,
+    "max_inverse_propensity": 10.0,
+    "feature_mode": "full",
+    "uncertainty_penalty": 0.0,
+    "minimum_predicted_cost": 0.05,
+    "cost_loss_weight": 0.05,
+    "cost_residual_correction": true
+  },
+  "shared_pilot": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/pilot"
+}

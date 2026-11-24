@@ -1,0 +1,237 @@
+{
+  "ips": -0.0014512256398811984,
+  "snips": -0.0014712603721542979,
+  "dr": 0.0002424325859421082,
+  "expected_cost_ips": 2.1336506675712714,
+  "expected_cost_snips": 2.163106541774686,
+  "reward_per_expected_minute": -0.0006801608444802843,
+  "effective_sample_size": 15.98178354247325,
+  "weight_sum": 15.782121694815842,
+  "mean_weight": 0.9863826059259901,
+  "max_observed_weight": 1.0282806094700696,
+  "nonzero_weight_events": 16,
+  "clipped_events": 0,
+  "max_weight": null,
+  "estimand": "single-step within-case action value over the logged case-context distribution",
+  "not_estimable_here": "adaptive joint case/action selection, repeated repairs, or fixed-budget risk trajectories",
+  "records": 16,
+  "specimens": 16,
+  "all_synthetic": true,
+  "dr_status": "external_group_held_out_predictions",
+  "target_policy_provenance": {
+    "mode": "held_out",
+    "training_specimen_ids": [
+      "synthetic_specimen_0006",
+      "synthetic_specimen_0014",
+      "synthetic_specimen_0027",
+      "synthetic_specimen_0028",
+      "synthetic_specimen_0035",
+      "synthetic_specimen_0038",
+      "synthetic_specimen_0039",
+      "synthetic_specimen_0042",
+      "synthetic_specimen_0049",
+      "synthetic_specimen_0054",
+      "synthetic_specimen_0060",
+      "synthetic_specimen_0062",
+      "synthetic_specimen_0064",
+      "synthetic_specimen_0072",
+      "synthetic_specimen_0077",
+      "synthetic_specimen_0082",
+      "synthetic_specimen_0090",
+      "synthetic_specimen_0095",
+      "synthetic_specimen_0108",
+      "synthetic_specimen_0112",
+      "synthetic_specimen_0115",
+      "synthetic_specimen_0116",
+      "synthetic_specimen_0121",
+      "synthetic_specimen_0122",
+      "synthetic_specimen_0141",
+      "synthetic_specimen_0147",
+      "synthetic_specimen_0152",
+      "synthetic_specimen_0161",
+      "synthetic_specimen_0167",
+      "synthetic_specimen_0169",
+      "synthetic_specimen_0171",
+      "synthetic_specimen_0172"
+    ],
+    "tuning_specimen_ids": [],
+    "evaluation_rewards_used_for_selection": false,
+    "configuration": "fixed ridge=1.0, temperature=0.1; no policy_val tuning",
+    "model_distinct_from_main_policy_tuned_on_policy_val": true
+  },
+  "q_provenance": {
+    "mode": "held_out",
+    "training_specimen_ids": [
+      "synthetic_specimen_0006",
+      "synthetic_specimen_0014",
+      "synthetic_specimen_0027",
+      "synthetic_specimen_0028",
+      "synthetic_specimen_0035",
+      "synthetic_specimen_0038",
+      "synthetic_specimen_0039",
+      "synthetic_specimen_0042",
+      "synthetic_specimen_0049",
+      "synthetic_specimen_0054",
+      "synthetic_specimen_0060",
+      "synthetic_specimen_0062",
+      "synthetic_specimen_0064",
+      "synthetic_specimen_0072",
+      "synthetic_specimen_0077",
+      "synthetic_specimen_0082",
+      "synthetic_specimen_0090",
+      "synthetic_specimen_0095",
+      "synthetic_specimen_0108",
+      "synthetic_specimen_0112",
+      "synthetic_specimen_0115",
+      "synthetic_specimen_0116",
+      "synthetic_specimen_0121",
+      "synthetic_specimen_0122",
+      "synthetic_specimen_0141",
+      "synthetic_specimen_0147",
+      "synthetic_specimen_0152",
+      "synthetic_specimen_0161",
+      "synthetic_specimen_0167",
+      "synthetic_specimen_0169",
+      "synthetic_specimen_0171",
+      "synthetic_specimen_0172"
+    ],
+    "tuning_specimen_ids": [],
+    "evaluation_rewards_used_for_selection": false,
+    "configuration": "fixed ridge=1.0, temperature=0.1; no policy_val tuning",
+    "model_distinct_from_main_policy_tuned_on_policy_val": true
+  },
+  "minimum_logger_probability_on_target_support": 0.2,
+  "largest_unclipped_weight": 1.0282806094700696,
+  "unclipped": {
+    "ips": -0.0014512256398811984,
+    "snips": -0.0014712603721542979,
+    "dr": 0.0002424325859421082,
+    "expected_cost_ips": 2.1336506675712714,
+    "expected_cost_snips": 2.163106541774686,
+    "reward_per_expected_minute": -0.0006801608444802843,
+    "effective_sample_size": 15.98178354247325,
+    "weight_sum": 15.782121694815842,
+    "mean_weight": 0.9863826059259901,
+    "max_observed_weight": 1.0282806094700696,
+    "nonzero_weight_events": 16,
+    "clipped_events": 0,
+    "max_weight": null
+  },
+  "clipping_sensitivity": {
+    "2.0": {
+      "ips": -0.0014512256398811984,
+      "snips": -0.0014712603721542979,
+      "dr": 0.0002424325859421082,
+      "expected_cost_ips": 2.1336506675712714,
+      "expected_cost_snips": 2.163106541774686,
+      "reward_per_expected_minute": -0.0006801608444802843,
+      "effective_sample_size": 15.98178354247325,
+      "weight_sum": 15.782121694815842,
+      "mean_weight": 0.9863826059259901,
+      "max_observed_weight": 1.0282806094700696,
+      "nonzero_weight_events": 16,
+      "clipped_events": 0,
+      "max_weight": 2.0
+    },
+    "5.0": {
+      "ips": -0.0014512256398811984,
+      "snips": -0.0014712603721542979,
+      "dr": 0.0002424325859421082,
+      "expected_cost_ips": 2.1336506675712714,
+      "expected_cost_snips": 2.163106541774686,
+      "reward_per_expected_minute": -0.0006801608444802843,
+      "effective_sample_size": 15.98178354247325,
+      "weight_sum": 15.782121694815842,
+      "mean_weight": 0.9863826059259901,
+      "max_observed_weight": 1.0282806094700696,
+      "nonzero_weight_events": 16,
+      "clipped_events": 0,
+      "max_weight": 5.0
+    },
+    "10.0": {
+      "ips": -0.0014512256398811984,
+      "snips": -0.0014712603721542979,
+      "dr": 0.0002424325859421082,
+      "expected_cost_ips": 2.1336506675712714,
+      "expected_cost_snips": 2.163106541774686,
+      "reward_per_expected_minute": -0.0006801608444802843,
+      "effective_sample_size": 15.98178354247325,
+      "weight_sum": 15.782121694815842,
+      "mean_weight": 0.9863826059259901,
+      "max_observed_weight": 1.0282806094700696,
+      "nonzero_weight_events": 16,
+      "clipped_events": 0,
+      "max_weight": 10.0
+    }
+  },
+  "confidence_intervals": {
+    "ips": {
+      "estimate": -0.0014512256398811984,
+      "ci": [
+        -0.004285346009335563,
+        0.0007318033816195125
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    },
+    "snips": {
+      "estimate": -0.0014712603721542979,
+      "ci": [
+        -0.004350770336144348,
+        0.0007378757332419348
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    },
+    "dr": {
+      "estimate": 0.0002424325859421082,
+      "ci": [
+        -0.0030186637426360364,
+        0.0030166487557949204
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    },
+    "expected_cost_ips": {
+      "estimate": 2.1336506675712714,
+      "ci": [
+        1.680054976389859,
+        2.588577599441034
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    },
+    "expected_cost_snips": {
+      "estimate": 2.163106541774686,
+      "ci": [
+        1.7073236512909442,
+        2.6232176380425947
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    },
+    "reward_per_expected_minute": {
+      "estimate": -0.0006801608444802843,
+      "ci": [
+        -0.0020221195096068382,
+        0.0003476817581377518
+      ],
+      "valid_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "confidence": 0.95
+    }
+  },
+  "bootstrap_repetitions": 200,
+  "warnings": [
+    "OPE conditions on fixed target policy, reward model, development reward panel and logged context population.",
+    "Specimen bootstrap does not include shared reward-panel sampling or new policy/acquisition-run uncertainty.",
+    "Metadata exclusion checks cannot prove correct logging randomization, hidden confounding absence or honest provenance.",
+    "Reward per expected minute is a ratio of single-step expectations, not value under an adaptive budget.",
+    "Self-normalization and weight clipping introduce finite-sample bias; clipped DR is not generally doubly robust."
+  ]
+}

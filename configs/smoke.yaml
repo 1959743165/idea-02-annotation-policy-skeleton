@@ -1,0 +1,33 @@
+# SYNTHETIC SOFTWARE CHECK ONLY. Expert minutes below are simulated, not CPU time.
+seed: 17
+dataset:
+  manifest: runs/synthetic_data/manifest.jsonl
+  output_dir: runs/synthetic_data
+  n_specimens: 180
+  image_size: 48
+detector:
+  grid_size: 8
+  epochs: 60
+  learning_rate: 0.04
+  class_weights: [1.0, 3.0, 4.0]
+evaluation:
+  foreground_threshold: 0.35
+  class_weights: [1.0, 1.0, 3.0]
+  matching_iou: 0.5
+policy:
+  ridge_grid: [0.1, 1.0, 10.0]
+  propensity_weighting: true
+  max_inverse_propensity: 10.0
+  feature_mode: full
+  uncertainty_penalty: 0.0
+  minimum_predicted_cost: 0.05
+  cost_loss_weight: 0.05
+  cost_residual_correction: true
+pilot:
+  split_reward_by_specimen: true
+  max_train_cases: null
+  max_val_cases: null
+budget_minutes: 20.0
+strategies: [random, uncertainty_per_minute, fixed_review, learned_gain_per_minute]
+output_dir: runs/experiment
+bootstrap_repetitions: 200

@@ -1,0 +1,2 @@
+status,case_id,specimen_id,action,failure_type,before_state,after_state,cost_minutes,reward,reference_uncertainty,public_features_before,explanation_after_review,protocol_deviation,followup
+NOT_RUN_REAL_EXPERIMENT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,仅在真实失败发生并审计后填写；不得生成故事

@@ -1,0 +1,65 @@
+{
+  "status": "PLANNING_ASSUMPTIONS_NOT_EMPIRICAL_RESULTS",
+  "seed": 17,
+  "assumptions": {
+    "meaningful_nauc_reduction": 0.02,
+    "paired_specimen_sd": 0.08,
+    "attrition": 0.15,
+    "two_sided_alpha": 0.05,
+    "target_power": 0.8,
+    "difference_model": "normal Full-minus-baseline specimen nAUC differences with mean=-effect"
+  },
+  "analytic_approximation": {
+    "complete_specimens": 126,
+    "enrolled_specimens": 149
+  },
+  "simulation": [
+    {
+      "enrolled_specimens": 100,
+      "analyzed_specimens": 85,
+      "power_estimate": 0.63,
+      "monte_carlo_ci_95": [
+        0.5740445552913591,
+        0.6826682721902588
+      ],
+      "simulation_repetitions": 300
+    },
+    {
+      "enrolled_specimens": 150,
+      "analyzed_specimens": 127,
+      "power_estimate": 0.7966666666666666,
+      "monte_carlo_ci_95": [
+        0.7475056887150938,
+        0.8383261483583421
+      ],
+      "simulation_repetitions": 300
+    },
+    {
+      "enrolled_specimens": 240,
+      "analyzed_specimens": 204,
+      "power_estimate": 0.95,
+      "monte_carlo_ci_95": [
+        0.9191529665272558,
+        0.9694683593706526
+      ],
+      "simulation_repetitions": 300
+    },
+    {
+      "enrolled_specimens": 300,
+      "analyzed_specimens": 255,
+      "power_estimate": 0.9833333333333333,
+      "monte_carlo_ci_95": [
+        0.9615846051669054,
+        0.9928605226493666
+      ],
+      "simulation_repetitions": 300
+    }
+  ],
+  "limitations": [
+    "Planning SD and effect must be replaced by independent pilot estimates.",
+    "Monte Carlo intervals describe simulation error only, not uncertainty about real-world power.",
+    "Conditions on fixed policies/acquisition trajectories; additional independent runs are needed for policy uncertainty.",
+    "Does not include multiple-comparison correction or device/site clustering.",
+    "The normal approximation is a planning model, not fabricated bounded empirical nAUC observations."
+  ]
+}

@@ -1,0 +1,42 @@
+COMMAND ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "/workspace/scratch/f1485640658c/idea_02_annotation_revision/scripts/run_experiment.py", "--config", "/workspace/scratch/f1485640658c/idea_02_annotation_revision/configs/smoke.yaml", "--manifest", "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/data/manifest.jsonl", "--output-dir", "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment"]
+EXIT 0
+{
+  "status": "COMPLETED_SYNTHETIC_ANNOTATION_POLICY_PIPELINE",
+  "real_training_performed": false,
+  "real_expert_annotations_collected": false,
+  "policy": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/policy.npz",
+  "train_logs": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/pilot/policy_train_logs.jsonl",
+  "val_logs": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/pilot/policy_val_logs.jsonl",
+  "strategies": {
+    "random": {
+      "trajectory": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/random/test/evaluated_timeline.json",
+      "paid_actions": 6,
+      "completed_actions": 6,
+      "failed_actions": 0,
+      "spent_minutes": 19.10356824190922
+    },
+    "uncertainty_per_minute": {
+      "trajectory": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/uncertainty_per_minute/test/evaluated_timeline.json",
+      "paid_actions": 10,
+      "completed_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 18.840043857535797
+    },
+    "fixed_review": {
+      "trajectory": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/fixed_review/test/evaluated_timeline.json",
+      "paid_actions": 10,
+      "completed_actions": 10,
+      "failed_actions": 0,
+      "spent_minutes": 19.702972012341668
+    },
+    "learned_gain_per_minute": {
+      "trajectory": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/experiment/learned_gain_per_minute/test/evaluated_timeline.json",
+      "paid_actions": 18,
+      "completed_actions": 17,
+      "failed_actions": 1,
+      "spent_minutes": 19.008957902281416
+    }
+  },
+  "all_methods_locked_before_test_evaluation": true,
+  "scientific_hypotheses_confirmed": false
+}

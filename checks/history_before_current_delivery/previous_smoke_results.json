@@ -1,0 +1,329 @@
+{
+  "status": "PASSED_SYNTHETIC_SOFTWARE_SMOKE",
+  "passed": true,
+  "created_utc": "2026-11-07T12:37:56.516124+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "13.0.0",
+    "matplotlib": "3.10.8",
+    "PyYAML": "6.0.3"
+  },
+  "wall_seconds": 15.97208546299953,
+  "checks": [
+    {
+      "name": "public_manifest_hashes_groups",
+      "passed": true,
+      "detail": {
+        "images": 180,
+        "errors": []
+      }
+    },
+    {
+      "name": "experiment_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/experiment.log"
+      }
+    },
+    {
+      "name": "all_methods_locked_before_test",
+      "passed": true,
+      "detail": "COMPLETED_SYNTHETIC_ANNOTATION_POLICY_PIPELINE"
+    },
+    {
+      "name": "budget_random",
+      "passed": true,
+      "detail": {
+        "spent": 19.103568241909223,
+        "paid": 6,
+        "failed": 0
+      }
+    },
+    {
+      "name": "budget_uncertainty_per_minute",
+      "passed": true,
+      "detail": {
+        "spent": 18.840043857535797,
+        "paid": 10,
+        "failed": 0
+      }
+    },
+    {
+      "name": "budget_fixed_review",
+      "passed": true,
+      "detail": {
+        "spent": 19.70297201234167,
+        "paid": 10,
+        "failed": 0
+      }
+    },
+    {
+      "name": "budget_learned_gain_per_minute",
+      "passed": true,
+      "detail": {
+        "spent": 19.008957902281413,
+        "paid": 18,
+        "failed": 1
+      }
+    },
+    {
+      "name": "detector_is_actually_optimized",
+      "passed": true,
+      "detail": {
+        "initial_loss": 1.0923984457321902,
+        "final_loss": 0.16537605918213652,
+        "parameter_l2_change": 2.882870145892644,
+        "epochs": 60,
+        "finite_training": true,
+        "elapsed_seconds": 0.13237040400053957,
+        "loss_history": [
+          1.0923984457321902,
+          1.0079913323383434,
+          0.9713423059824239,
+          0.9301999825833724,
+          0.8854774674519172,
+          0.8367618910748376,
+          0.7890392237381415,
+          0.7454239957181179,
+          0.7097375208959438,
+          0.6800319041389596,
+          0.6481944569717767,
+          0.6131490438477538,
+          0.5801410902334196,
+          0.5519731987465476,
+          0.527472984446902,
+          0.5042129426753782,
+          0.480726013772006,
+          0.45740232929990804,
+          0.4358162429447986,
+          0.41714554108478613,
+          0.40062253260086744,
+          0.3841082433214577,
+          0.3671246214598584,
+          0.3513866454519193,
+          0.3380449066041174,
+          0.32634463480235115,
+          0.31491248256201093,
+          0.30333885337602956,
+          0.29237800493921134,
+          0.2828962375062647,
+          0.27467059584654724,
+          0.2666067578760579,
+          0.2583949005841833,
+          0.25085113633419326,
+          0.2444226616336839,
+          0.23856692128574128,
+          0.23269134115810514,
+          0.22695424247226292,
+          0.2218998644374998,
+          0.2175336561052056,
+          0.21327194836634666,
+          0.20895260909408622,
+          0.2050279517950858,
+          0.2016440258840121,
+          0.1984363440329427,
+          0.1952055526984481,
+          0.19218891582804917,
+          0.1895709513892526,
+          0.1871190639440685,
+          0.18462687484028814,
+          0.18227504722393,
+          0.1802018015494072,
+          0.17824089077520525,
+          0.17626747372932755,
+          0.1744024465761312,
+          0.1727388421696382,
+          0.17115078114399823,
+          0.16955464328297318,
+          0.1680560899853693,
+          0.16669689914045233
+        ]
+      }
+    },
+    {
+      "name": "measured_rewards_and_disjoint_panels",
+      "passed": true,
+      "detail": {
+        "train_events": 32,
+        "val_events": 16,
+        "reward_fit_specimens": 10,
+        "reward_tune_specimens": 10
+      }
+    },
+    {
+      "name": "inference_without_any_private_truth_files",
+      "passed": true,
+      "detail": {
+        "test_images": 16
+      }
+    },
+    {
+      "name": "paired_specimen_statistics",
+      "passed": true,
+      "detail": {
+        "difference_B_minus_A": 0.011300748427609725,
+        "estimate_A": 0.13884756270923418,
+        "estimate_B": 0.1501483111368439,
+        "ci": [
+          0.0025463626464784735,
+          0.023495960518305378
+        ],
+        "confidence": 0.95,
+        "paired_permutation_p_two_sided": 0.029850746268656716,
+        "n_specimens": 16,
+        "unit": "specimen",
+        "valid_bootstrap_draws": 200,
+        "method": "paired_specimen_bootstrap_and_block_label_exchange",
+        "valid_permutation_draws": 200,
+        "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+      }
+    },
+    {
+      "name": "device_holdout_evaluation_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/device_holdout_evaluation.log"
+      }
+    },
+    {
+      "name": "offpolicy_single_step_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/offpolicy_single_step.log"
+      }
+    },
+    {
+      "name": "visualization_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/visualization.log"
+      }
+    },
+    {
+      "name": "power_planning_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/power_planning.log"
+      }
+    },
+    {
+      "name": "unit_tests_exit",
+      "passed": true,
+      "detail": {
+        "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/unit_tests.log"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "experiment",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/scripts/run_experiment.py",
+        "--config",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/configs/smoke.yaml",
+        "--manifest",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/data/manifest.jsonl",
+        "--output-dir",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 9.520417492998604,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/experiment.log"
+    },
+    {
+      "name": "device_holdout_evaluation",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/scripts/evaluate.py",
+        "--config",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/configs/smoke.yaml",
+        "--manifest",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/data/manifest.jsonl",
+        "--timeline",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/learned_gain_per_minute/locked_timeline.json",
+        "--split",
+        "device_test",
+        "--output-dir",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/device_test"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6861946220014943,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/device_holdout_evaluation.log"
+    },
+    {
+      "name": "offpolicy_single_step",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/scripts/offpolicy_evaluate.py",
+        "--train-logs",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/pilot/policy_train_logs.jsonl",
+        "--logs",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/pilot/policy_val_logs.jsonl",
+        "--n-bootstrap",
+        "200",
+        "--output",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/ope_SYNTHETIC.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.35879426000064996,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/offpolicy_single_step.log"
+    },
+    {
+      "name": "visualization",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/scripts/visualize.py",
+        "--timelines",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/random/test/evaluated_timeline.json",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/uncertainty_per_minute/test/evaluated_timeline.json",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/fixed_review/test/evaluated_timeline.json",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/experiment/learned_gain_per_minute/test/evaluated_timeline.json",
+        "--horizon-minutes",
+        "20.0",
+        "--n-bootstrap",
+        "200",
+        "--output-dir",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/figures"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.3058497969996097,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/visualization.log"
+    },
+    {
+      "name": "power_planning",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/scripts/estimate_power.py",
+        "--repetitions",
+        "300",
+        "--output",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/power_PLANNING_NOT_OBSERVED.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.696214671999769,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/power_planning.log"
+    },
+    {
+      "name": "unit_tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.8493789849999303,
+      "log": "/workspace/scratch/f1485640658c/idea_02_annotation_action_policy/runs/smoke/logs/unit_tests.log"
+    }
+  ],
+  "real_training_or_real_expert_work_performed": false,
+  "scientific_superiority_is_not_asserted": true,
+  "meaning": "Checks software integrity and evaluation separation; results do not establish natural disagreement or policy effectiveness."
+}

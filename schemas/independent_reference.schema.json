@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Separate evaluation reference; never a policy feature",
+  "type": "object",
+  "required": [
+    "image_id",
+    "specimen_id",
+    "split",
+    "is_synthetic",
+    "reference_version",
+    "labelmap_path",
+    "reference_source",
+    "unresolved_policy"
+  ],
+  "properties": {
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specimen_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "labelmap_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unresolved_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "split": {
+      "enum": [
+        "reward",
+        "detector_val",
+        "test",
+        "device_test"
+      ]
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "adjudicator_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknown_value": {
+      "const": 255
+    }
+  },
+  "$comment": "Reference truth is withheld from training/actions. For real data, natural disagreement remains documented; adjudication is a reference standard, not metaphysical certainty."
+}

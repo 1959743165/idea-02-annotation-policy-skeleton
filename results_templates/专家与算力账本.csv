@@ -1,0 +1,2 @@
+status,record_id,phase,run_id,strategy,resource_type,person_or_device_id,start_utc,end_utc,active_minutes,gpu_hours,peak_memory_gb,cost_currency,amount,included_in_incremental_budget,artifact_hash,notes
+NOT_RUN_REAL_EXPERIMENT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实计时后填；初读/pilot/参考/失败/裁决分别入账

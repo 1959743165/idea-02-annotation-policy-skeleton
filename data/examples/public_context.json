@@ -1,0 +1,35 @@
+{
+  "image_id": "synthetic_image_0014",
+  "specimen_id": "synthetic_specimen_0014",
+  "split": "policy_train",
+  "is_synthetic": true,
+  "features": {
+    "model_uncertainty": 0.5956702225107094,
+    "entropy": 0.2688458986187867,
+    "existence_disagreement": 0.0,
+    "class_disagreement": 0.888888888888889,
+    "boundary_disagreement": 0.12037037037037039,
+    "boundary_pair_fraction": 1.0,
+    "repeat_disagreement": 0.0,
+    "image_quality": 0.733316132206938,
+    "image_contrast": 0.09411764705882353,
+    "n_annotators": 3.0,
+    "repeat_read_count": 0.0,
+    "active": 1.0,
+    "annotation_foreground_fraction": 0.025607638888888888,
+    "model_annotation_gap": 0.058448778414244514
+  },
+  "available_actions": [
+    "boundary",
+    "missing",
+    "class",
+    "review"
+  ],
+  "action_quotes_minutes": {
+    "boundary": 2.0,
+    "missing": 3.2,
+    "class": 1.4,
+    "review": 2.5
+  },
+  "note": "SYNTHETIC_FORMAT_EXAMPLE_NOT_REAL_EXPERT_RECORD"
+}

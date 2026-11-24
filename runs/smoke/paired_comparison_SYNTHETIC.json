@@ -1,0 +1,120 @@
+{
+  "difference_direction": "B_minus_A",
+  "horizon_minutes": 20.0,
+  "primary_normalized_auc": {
+    "difference_B_minus_A": 0.011300748427609725,
+    "estimate_A": 0.13884756270923418,
+    "estimate_B": 0.1501483111368439,
+    "ci": [
+      0.0025463626464784735,
+      0.023495960518305378
+    ],
+    "confidence": 0.95,
+    "paired_permutation_p_two_sided": 0.029850746268656716,
+    "n_specimens": 16,
+    "unit": "specimen",
+    "valid_bootstrap_draws": 200,
+    "method": "paired_specimen_bootstrap_and_block_label_exchange",
+    "valid_permutation_draws": 200,
+    "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+  },
+  "endpoint_comparisons": {
+    "risk": {
+      "difference_B_minus_A": 0.010622985200829299,
+      "estimate_A": 0.13524087304163931,
+      "estimate_B": 0.1458638582424686,
+      "ci": [
+        0.0,
+        0.020973670814332886
+      ],
+      "confidence": 0.95,
+      "paired_permutation_p_two_sided": 0.24378109452736318,
+      "n_specimens": 16,
+      "unit": "specimen",
+      "valid_bootstrap_draws": 200,
+      "method": "paired_specimen_bootstrap_and_block_label_exchange",
+      "valid_permutation_draws": 200,
+      "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+    },
+    "critical_miss_rate": {
+      "difference_B_minus_A": 0.0,
+      "estimate_A": 0.0,
+      "estimate_B": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "paired_permutation_p_two_sided": 1.0,
+      "n_specimens": 16,
+      "unit": "specimen",
+      "valid_bootstrap_draws": 199,
+      "method": "paired_specimen_bootstrap_and_block_label_exchange",
+      "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+      "valid_permutation_draws": 200,
+      "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+    },
+    "false_clear_rate": {
+      "difference_B_minus_A": 0.0,
+      "estimate_A": 0.0,
+      "estimate_B": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "paired_permutation_p_two_sided": 1.0,
+      "n_specimens": 16,
+      "unit": "specimen",
+      "valid_bootstrap_draws": 200,
+      "method": "paired_specimen_bootstrap_and_block_label_exchange",
+      "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+      "valid_permutation_draws": 200,
+      "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+    },
+    "critical_instance_recall": {
+      "difference_B_minus_A": 0.0,
+      "estimate_A": 0.6666666666666666,
+      "estimate_B": 0.6666666666666666,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "paired_permutation_p_two_sided": 1.0,
+      "n_specimens": 16,
+      "unit": "specimen",
+      "valid_bootstrap_draws": 199,
+      "method": "paired_specimen_bootstrap_and_block_label_exchange",
+      "warning": "degenerate_difference_interval_conditions_on_observed_test_specimens",
+      "valid_permutation_draws": 200,
+      "permutation_assumption": "whole-specimen model-label exchangeability under the null; not automatic randomization of adaptive policies"
+    },
+    "normal_false_alarm_rate": {
+      "difference_B_minus_A": null,
+      "estimate_A": null,
+      "estimate_B": null,
+      "ci": null,
+      "confidence": 0.95,
+      "paired_permutation_p_two_sided": null,
+      "n_specimens": 16,
+      "unit": "specimen",
+      "valid_bootstrap_draws": 0,
+      "method": "paired_specimen_bootstrap_and_block_label_exchange",
+      "reason": "zero_eligible_denominator"
+    }
+  },
+  "predeclared_family_holm_p": {
+    "normalized_auc": 0.08955223880597014,
+    "critical_miss_rate": 1.0,
+    "false_clear_rate": 1.0
+  },
+  "paired_unit": "specimen",
+  "cohort_sha256": "28a38db10e2cf8e849fdc79f991c9125e99747fae6b3885295bd23d740d95029",
+  "limitations": [
+    "Confidence intervals condition on each already-frozen trajectory.",
+    "Repeat independent acquisition runs and expert outcomes to study policy-level uncertainty.",
+    "Repeated budget points are correlated measurements, not extra independent samples.",
+    "No test-risk information may be fed back into action selection, early stopping or threshold choice."
+  ]
+}

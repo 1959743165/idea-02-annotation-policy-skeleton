@@ -1,0 +1,9 @@
+status,split,planned_independent_specimens,observed_specimens,observed_images,observed_devices,unassessable_specimens,source_verified_fraction,notes
+PLANNING_NOT_OBSERVED,seed_train,400,NA,NA,NA,NA,NA,初始模型训练
+PLANNING_NOT_OBSERVED,policy_train,288,NA,NA,NA,NA,NA,240分歧+48未标注；仅计划
+PLANNING_NOT_OBSERVED,policy_val,72,NA,NA,NA,NA,NA,60分歧+12未标注；仅计划
+PLANNING_NOT_OBSERVED,reward,100,NA,NA,NA,NA,NA,开发参考另按试样拆fit/tune
+PLANNING_NOT_OBSERVED,acquisition_pool,240,NA,NA,NA,NA,NA,正式冻结池
+PLANNING_NOT_OBSERVED,detector_val,100,NA,NA,NA,NA,NA,阈值与模型方案
+PLANNING_NOT_OBSERVED,test,200,NA,NA,NA,NA,NA,锁定主要测试
+PLANNING_NOT_OBSERVED,device_test,100,NA,NA,NA,NA,NA,设备独立探索

@@ -1,0 +1,140 @@
+{
+  "status": "PASSED_FRESH_ZIP_EXTRACTION_AND_REEXECUTION",
+  "created_utc": "2026-11-07T12:48:47.624390+00:00",
+  "candidate_zip_sha256": "d4795aad918dd466ff193db06affc4a37371c13ca6742a4b5cfa4661501b7e5a",
+  "candidate_zip_bytes": 7217801,
+  "candidate_has_no_empty_members": true,
+  "candidate_crc_passed": true,
+  "extracted_directory": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy",
+  "source_and_configuration_hashes_identical": true,
+  "source_files_checked": 50,
+  "source_hashes": {
+    "configs/baseline_matrix.csv": "a75b566cf75c2c893a020728f712723f142ea1c8bb9ca534889378367d701798",
+    "configs/matrix.yaml": "c6ea95fd8b3e1a1fc427923ddf446a333463bb30d9a87c8dfbabd933fcf13695",
+    "configs/real_protocol.yaml": "a2b71f4be7b7736d8d8238e3ad1cf4478d680a4c7663891d19cf3c087dd41712",
+    "configs/smoke.yaml": "4f374783a6434ba8c67c60d28b708ca8665fa57c83af20d8e492b2795c00ffdf",
+    "configs/synthetic.yaml": "b74ca7c9335bd74238a7f5b03a5144989250c4289e29e49baa35be35b60b9cdd",
+    "pyproject.toml": "d95cd597537a6279921a327de2252e0744c2b07bff52952f40d878853a755f09",
+    "requirements.txt": "05571431c7cc7fcea1a6d146373fab4839c5268aab8855ff7d45a2f208071cea",
+    "scripts/attach_reward.py": "fd91de84a4ab0e9fb07ccc7e4b967be14c75d31438b355dc4c9fbebc3b267984",
+    "scripts/check_package.py": "f904359962823a0db61d86a52e2ef24ad2e2a89538fc813e974e1c7c31c1d707",
+    "scripts/collect_pilot.py": "4972dc6c923a5262841342eb08f091ab65c6f263b2da838a5ebcf5a5936cea15",
+    "scripts/estimate_power.py": "55857c0e1564c3c89ebb636c79f298776bd379aff9eb33106c818d552da4c5eb",
+    "scripts/evaluate.py": "ee64a373585b5aca65a1c5e4a6de4565084b88b44f379a472dc23c7620ed5a65",
+    "scripts/import_human_action.py": "845c0af2c897cd1b87ec3dbcc01ef93f93055eb50ace674b2a046a9cd0242be0",
+    "scripts/make_synthetic.py": "07594200513c1e51dd5231b7bb8cf4062dcc39cbc5ed9e5909a2a6e7ab9c3c6a",
+    "scripts/offpolicy_evaluate.py": "f0345a0d1cf044864dc534962933e87b391bdc59e77306b2f8841a0df0decb7c",
+    "scripts/predict_detector.py": "fda74f39b71f1e4908cbccbdc68bff8d2bb2eddfcea50b6e49eb3804f2fb7058",
+    "scripts/prepare_pilot_request.py": "04cda3e7106344e4e1d8931d02a16549fc9e128ff2623d82443bf98cad01142a",
+    "scripts/reference_adapter_worker.py": "89bf5eeb206174691f4f00faf95b1c4f64b035cc987579fec3f333e2fb5d4ef5",
+    "scripts/run_budget.py": "40f0cfef80b8f0af3f803a86dda2415331c28441dffb7b77a68be24d4a95db3e",
+    "scripts/run_detector_adapter.py": "d6020b04bfda57ca46a9aee9e7684d64d64be058d630d1cd3850e45427f6c125",
+    "scripts/run_experiment.py": "98edc5f7b3205fed84f02aa96c2215f3dd5bbc3067265550c2ab36915c040a8c",
+    "scripts/run_matrix.py": "7329269b441cfbcb8e48599b6c0fdd6a71810fd80ee59e30cb13d51abe045e2d",
+    "scripts/smoke_test.py": "e223b48f41337041d0801fe6289f096d58f850ea2373f23df7377477ff377ff0",
+    "scripts/suggest_action.py": "247790ff1f075390eb48bc3254d1b7c5fd1917bf3577e68e590838da8238088d",
+    "scripts/train_detector.py": "34f5fe3ba0ff58abd9b1f0172bbc9326555c9aa618b9bc578092c4d2d77a313b",
+    "scripts/train_policy.py": "75c3d0bbae2ad9980345d8144c6e63a6d0d9393e873db23e0fef9403fc1007ed",
+    "scripts/validate_dataset.py": "e270d358cdb9ae782ad7fa64de239c00936727c709b67f89d48b771b0a3d8452",
+    "scripts/visualize.py": "4f68815e77165043d2288f41e28dc68200a69a891d4ab3f4481528892b717495",
+    "src/annotation_policy/__init__.py": "9900abcf3281dd9be4858f1574de2a962e093a96e74aa9a8227d6e30ed809965",
+    "src/annotation_policy/adapters.py": "f76c1fab99f46940f8dcf2e46a143e4e2a9d69eafb14b7d36373acf550d85a70",
+    "src/annotation_policy/annotation_state.py": "af3af34d2509da908fc7d4b5728429cedb0e36fba5814cb0984bad1b5d06598d",
+    "src/annotation_policy/dataset.py": "1ec34aa6afe02ceff90cea8bffc437f7080f139d5114a9697cfba047f2d0ead6",
+    "src/annotation_policy/detector.py": "017cb3b9bdb5989cf85d3298c0e7d1fce3f205ae889940922e90b0588a2c290e",
+    "src/annotation_policy/evaluation.py": "7955ea88d37d89a6bbeca73b1ce1124b479bb5b746082898ab0b6457f8e6d3ce",
+    "src/annotation_policy/experiment.py": "3c44fab67bd5acca7c206da9e551436b9c877d2b6f6e87fde0148c76db28d649",
+    "src/annotation_policy/features.py": "c68733051fd31612303c3e317f5785186164be32dceb71ea583d98987b0ac25c",
+    "src/annotation_policy/offpolicy.py": "0fc78ad3d9acecd0585ca1b36552e4be336dd3c83745425ff0ae606bfe3065a3",
+    "src/annotation_policy/oracle.py": "c5a4b9a388372816f8fc64c70e5e7b4f93f15dd39a50ef084a99daeedd729173",
+    "src/annotation_policy/policy.py": "4b6302611b923d65e745d2e9b93e032d3d6b861c163d0a87b390c0e87f097ba9",
+    "src/annotation_policy/schema.py": "53499dd0f2fa046be0668ff329cd5e22278154bd1b5b18197c352b5ed0e42d81",
+    "src/annotation_policy/splits.py": "e66ea5841b517a1ab60dbdf2c90df7cb7cee2ed1da605c26bf65bcb2da0957d5",
+    "src/annotation_policy/statistics.py": "cc45a4e9c7fd7172a16bd9093ccd68c45e2ed54838aacd60893e3de2a43160d5",
+    "src/annotation_policy/visualization.py": "56b951249e9b1d3c420814cff38ce92e935378fccc4c71c8bafb8d3a0f9cf728",
+    "tests/test_adapters.py": "a188a4d846fbf6add4d3ff77c709dad5a490181db4107aa2ee111c33bad08663",
+    "tests/test_core.py": "70b769e778e188086cf16f3407d34531a3262f51fe6d44a3b7edd9c7fd357604",
+    "tests/test_evaluation.py": "bc86f2907e766d6325ea93c2ca9f6ffb105469a4cf093c26c95ded49117f0baa",
+    "tests/test_offpolicy.py": "f76bee2832e0eedad712bb8cee11e52f91f411c5746c66f865dcfb9c371ca136",
+    "tests/test_policy.py": "74516fc82ebf0dd895be1e7240a2f09243240e725b65f73eabba2a3bf86e7cae",
+    "tests/test_splits.py": "3ccaa455bc258cd0c7c63d34f7ddf9fe52fc61a7cb8a654e5758c00a02e3b53c",
+    "tests/test_statistics.py": "dfcd1c602760d52486cdd752e612a20607fb4cc178cf50f033acb3792afa2f75"
+  },
+  "commands": [
+    {
+      "name": "fresh_unzip_manifest_check",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/scripts/check_package.py",
+        "--root",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy",
+        "--verify-manifest",
+        "--report",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/extracted_integrity.json"
+      ],
+      "cwd": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/unrelated_cwd",
+      "exit_code": 0,
+      "wall_seconds": 0.43051811199984513,
+      "log": "checks/fresh_unzip_manifest_check.log"
+    },
+    {
+      "name": "fresh_unzip_smoke",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/scripts/smoke_test.py",
+        "--output-dir",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/fresh_run"
+      ],
+      "cwd": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/unrelated_cwd",
+      "exit_code": 0,
+      "wall_seconds": 17.895462452001084,
+      "log": "checks/fresh_unzip_smoke.log"
+    },
+    {
+      "name": "fresh_unzip_packaged_checkpoint_replay",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/scripts/evaluate.py",
+        "--config",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/configs/smoke.yaml",
+        "--manifest",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/runs/smoke/data/manifest.jsonl",
+        "--timeline",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/idea_02_annotation_action_policy/runs/smoke/experiment/learned_gain_per_minute/locked_timeline.json",
+        "--output-dir",
+        "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/packaged_checkpoint_replay"
+      ],
+      "cwd": "/workspace/scratch/f1485640658c/tmp/idea02_unzip_rp242868/unrelated_cwd",
+      "exit_code": 0,
+      "wall_seconds": 0.6763173439994716,
+      "log": "checks/fresh_unzip_packaged_checkpoint_replay.log"
+    }
+  ],
+  "reproduced_trajectories": [
+    {
+      "strategy": "random",
+      "same_actions_and_costs": true,
+      "paid_actions": 6
+    },
+    {
+      "strategy": "uncertainty_per_minute",
+      "same_actions_and_costs": true,
+      "paid_actions": 10
+    },
+    {
+      "strategy": "fixed_review",
+      "same_actions_and_costs": true,
+      "paid_actions": 10
+    },
+    {
+      "strategy": "learned_gain_per_minute",
+      "same_actions_and_costs": true,
+      "paid_actions": 18
+    }
+  ],
+  "smoke_checks_passed": 16,
+  "original_environment_not_required_for_import_paths": true,
+  "new_environment_note": "Same installed Python dependencies, separate extracted sources and unrelated working directory; not a clean OS/package installation test.",
+  "final_zip_note": "Final archive additionally contains this verification report and updated inventory; source/configuration files are unchanged from this tested candidate.",
+  "real_experiments_performed": false
+}

@@ -1,0 +1,183 @@
+{
+  "status": "SYNTHETIC_RANDOMIZED_ACTION_PILOT_ONLY",
+  "real_experts_used": false,
+  "reward_fit_and_tune_disjoint": true,
+  "final_test_used_for_rewards": false,
+  "measured_risk_changes_not_scripted_utilities": true,
+  "dataset_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "images": 180,
+    "specimens": 180,
+    "all_synthetic": true,
+    "public_annotations": 296,
+    "group_check": {
+      "ok": true,
+      "protocol": "within_domain",
+      "errors": [],
+      "warnings": [],
+      "connected_groups": 180,
+      "leaked_groups": [],
+      "split_summary": {
+        "seed_train": {
+          "images": 32,
+          "specimens": 32,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "policy_train": {
+          "images": 32,
+          "specimens": 32,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "policy_val": {
+          "images": 16,
+          "specimens": 16,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "reward": {
+          "images": 20,
+          "specimens": 20,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "acquisition_pool": {
+          "images": 32,
+          "specimens": 32,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "detector_val": {
+          "images": 16,
+          "specimens": 16,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "test": {
+          "images": 16,
+          "specimens": 16,
+          "devices": [
+            "SYNTH_DEVICE_0",
+            "SYNTH_DEVICE_1",
+            "SYNTH_DEVICE_2"
+          ],
+          "sites": [
+            "SYNTH_SITE_MAIN"
+          ]
+        },
+        "device_test": {
+          "images": 16,
+          "specimens": 16,
+          "devices": [
+            "SYNTH_DEVICE_3"
+          ],
+          "sites": [
+            "SYNTH_SITE_EXTERNAL"
+          ]
+        }
+      },
+      "limitations": [
+        "Identifier checks cannot certify provenance correctness.",
+        "Perceptual near-duplicates need an independent source audit.",
+        "Repeated expert reads remain correlated with the same specimen."
+      ]
+    },
+    "manifest_sha256": "2b30cc1f1ceacdeab055663e46800efbf8b4a2e023f62a4bb7b47a34730b89e4",
+    "limitations": [
+      "Valid JSON and group IDs do not replace expert annotation quality audits.",
+      "Public quotes are budgets/limits, not observed prospective action costs."
+    ]
+  },
+  "roles": [
+    {
+      "split": "policy_train",
+      "events": 32,
+      "action_counts": {
+        "new_image": 8,
+        "review": 7,
+        "class": 5,
+        "boundary": 7,
+        "missing": 4,
+        "reimage": 1
+      },
+      "simulated_expert_minutes": 72.4629107747468,
+      "reward_specimens": [
+        "synthetic_specimen_0009",
+        "synthetic_specimen_0036",
+        "synthetic_specimen_0067",
+        "synthetic_specimen_0083",
+        "synthetic_specimen_0084",
+        "synthetic_specimen_0099",
+        "synthetic_specimen_0123",
+        "synthetic_specimen_0174",
+        "synthetic_specimen_0176",
+        "synthetic_specimen_0178"
+      ]
+    },
+    {
+      "split": "policy_val",
+      "events": 16,
+      "action_counts": {
+        "review": 5,
+        "new_image": 4,
+        "reimage": 1,
+        "boundary": 3,
+        "class": 2,
+        "missing": 1
+      },
+      "simulated_expert_minutes": 34.55132403842631,
+      "reward_specimens": [
+        "synthetic_specimen_0016",
+        "synthetic_specimen_0052",
+        "synthetic_specimen_0066",
+        "synthetic_specimen_0094",
+        "synthetic_specimen_0098",
+        "synthetic_specimen_0102",
+        "synthetic_specimen_0104",
+        "synthetic_specimen_0109",
+        "synthetic_specimen_0145",
+        "synthetic_specimen_0168"
+      ]
+    }
+  ],
+  "scope": "Each development case receives one randomized action. The estimated marginal gain is conditional on the common seed training set, not a guaranteed sequential treatment effect."
+}

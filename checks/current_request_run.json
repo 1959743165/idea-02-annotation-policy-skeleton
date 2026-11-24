@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-07T16:00:33.239389+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/f1485640658c/idea_02_annotation_revision/scripts/smoke_test.py",
+    "--output-dir",
+    "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke"
+  ],
+  "working_directory": "/workspace/scratch/f1485640658c/tmp",
+  "exit_code": 0,
+  "wall_seconds": 17.75650377099737,
+  "output_directory": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke",
+  "real_training_or_expert_experiment": false
+}

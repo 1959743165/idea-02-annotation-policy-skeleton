@@ -1,0 +1,215 @@
+{
+  "auc": 2.9507599531397166,
+  "normalized_auc": 0.14753799765698583,
+  "final_risk": 0.15118963556433063,
+  "horizon_minutes": 20.0,
+  "completed_actions": 10,
+  "last_completed_action_minutes": 19.40125599357543,
+  "carry_forward_minutes": 0.598744006424571,
+  "future_events_ignored": 0,
+  "step_times": [
+    0.0,
+    1.2956195120365104,
+    2.1226266599930987,
+    4.70670949861125,
+    7.667546385817355,
+    9.909779010784304,
+    12.717506176008666,
+    15.285556815698262,
+    16.52522679528955,
+    18.5808917779648,
+    19.40125599357543,
+    20.0
+  ],
+  "step_risks": [
+    0.152849381895158,
+    0.14333358257960496,
+    0.14333358257960496,
+    0.14333358257960496,
+    0.14333358257960496,
+    0.14253186145016708,
+    0.14253186145016708,
+    0.16633140073592834,
+    0.16104611214747183,
+    0.15118963556433063,
+    0.15118963556433063,
+    0.15118963556433063
+  ],
+  "integration": "right_continuous_completed_action_step_function_no_linear_interpolation",
+  "nauc_confidence_interval": {
+    "estimate": 0.14753799765698583,
+    "ci": [
+      0.10862395442585,
+      0.1881469308267563
+    ],
+    "confidence": 0.95,
+    "unit": "specimen",
+    "n_specimens": 16,
+    "eligible_specimens": 16,
+    "numerator": 2.3606079625117733,
+    "denominator": 16.0,
+    "bootstrap_repetitions": 200,
+    "valid_bootstrap_draws": 200,
+    "method": "percentile_specimen_cluster_bootstrap"
+  },
+  "per_specimen_nauc": {
+    "synthetic_specimen_0007": [
+      0.11190735475760652,
+      1.0
+    ],
+    "synthetic_specimen_0020": [
+      0.05132299270072993,
+      1.0
+    ],
+    "synthetic_specimen_0045": [
+      0.17062190343199654,
+      1.0
+    ],
+    "synthetic_specimen_0061": [
+      0.11011589179695347,
+      1.0
+    ],
+    "synthetic_specimen_0070": [
+      0.227663013290673,
+      1.0
+    ],
+    "synthetic_specimen_0076": [
+      0.2690281583671927,
+      1.0
+    ],
+    "synthetic_specimen_0088": [
+      0.0658983666061706,
+      1.0
+    ],
+    "synthetic_specimen_0101": [
+      0.10846247613877005,
+      1.0
+    ],
+    "synthetic_specimen_0105": [
+      0.1387496672162261,
+      1.0
+    ],
+    "synthetic_specimen_0107": [
+      0.2350148176382513,
+      1.0
+    ],
+    "synthetic_specimen_0114": [
+      0.2975340403294768,
+      1.0
+    ],
+    "synthetic_specimen_0134": [
+      0.18140344598555544,
+      1.0
+    ],
+    "synthetic_specimen_0135": [
+      0.1419030162139763,
+      1.0
+    ],
+    "synthetic_specimen_0138": [
+      0.14018112967481675,
+      1.0
+    ],
+    "synthetic_specimen_0154": [
+      0.03755389365608023,
+      1.0
+    ],
+    "synthetic_specimen_0162": [
+      0.0732477947072975,
+      1.0
+    ]
+  },
+  "cohort_sha256": "28a38db10e2cf8e849fdc79f991c9125e99747fae6b3885295bd23d740d95029",
+  "endpoint_confidence_intervals": {
+    "risk": {
+      "estimate": 0.15118963556433065,
+      "ci": [
+        0.10749146148617225,
+        0.20270271244131322
+      ],
+      "confidence": 0.95,
+      "unit": "specimen",
+      "n_specimens": 16,
+      "eligible_specimens": 16,
+      "numerator": 2.41903416902929,
+      "denominator": 16.0,
+      "bootstrap_repetitions": 200,
+      "valid_bootstrap_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap"
+    },
+    "critical_miss_rate": {
+      "estimate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "unit": "specimen",
+      "n_specimens": 16,
+      "eligible_specimens": 6,
+      "numerator": 0.0,
+      "denominator": 6.0,
+      "bootstrap_repetitions": 200,
+      "valid_bootstrap_draws": 199,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "warnings": [
+        "degenerate_interval_does_not_prove_zero_population_risk"
+      ]
+    },
+    "false_clear_rate": {
+      "estimate": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "confidence": 0.95,
+      "unit": "specimen",
+      "n_specimens": 16,
+      "eligible_specimens": 16,
+      "numerator": 0.0,
+      "denominator": 16.0,
+      "bootstrap_repetitions": 200,
+      "valid_bootstrap_draws": 200,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "warnings": [
+        "degenerate_interval_does_not_prove_zero_population_risk"
+      ]
+    },
+    "critical_instance_recall": {
+      "estimate": 0.6666666666666666,
+      "ci": [
+        0.25,
+        1.0
+      ],
+      "confidence": 0.95,
+      "unit": "specimen",
+      "n_specimens": 16,
+      "eligible_specimens": 6,
+      "numerator": 4.0,
+      "denominator": 6.0,
+      "bootstrap_repetitions": 200,
+      "valid_bootstrap_draws": 199,
+      "method": "percentile_specimen_cluster_bootstrap"
+    },
+    "normal_false_alarm_rate": {
+      "estimate": null,
+      "ci": null,
+      "confidence": 0.95,
+      "unit": "specimen",
+      "n_specimens": 16,
+      "eligible_specimens": 0,
+      "numerator": 0.0,
+      "denominator": 0.0,
+      "bootstrap_repetitions": 200,
+      "valid_bootstrap_draws": 0,
+      "method": "percentile_specimen_cluster_bootstrap",
+      "reason": "zero_eligible_denominator"
+    }
+  },
+  "uncertainty_scope": "test-specimen sampling conditional on this fixed acquisition trajectory and trained policy",
+  "not_covered": [
+    "policy-training randomness",
+    "different action outcomes/expert panels",
+    "new acquisition pools",
+    "new device/site populations"
+  ]
+}

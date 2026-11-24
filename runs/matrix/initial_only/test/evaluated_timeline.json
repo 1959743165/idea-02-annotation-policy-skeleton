@@ -1,0 +1,380 @@
+{
+  "status": "SYNTHETIC_TEST_REPLAY_AFTER_POLICY_LOCK",
+  "strategy": "no_action",
+  "seed": 17,
+  "split": "test",
+  "horizon_minutes": 20.0,
+  "spent_minutes": 0.0,
+  "test_specimen_ids": [
+    "synthetic_specimen_0007",
+    "synthetic_specimen_0020",
+    "synthetic_specimen_0045",
+    "synthetic_specimen_0061",
+    "synthetic_specimen_0070",
+    "synthetic_specimen_0076",
+    "synthetic_specimen_0088",
+    "synthetic_specimen_0101",
+    "synthetic_specimen_0105",
+    "synthetic_specimen_0107",
+    "synthetic_specimen_0114",
+    "synthetic_specimen_0134",
+    "synthetic_specimen_0135",
+    "synthetic_specimen_0138",
+    "synthetic_specimen_0154",
+    "synthetic_specimen_0162"
+  ],
+  "events": [
+    {
+      "step": 0,
+      "minutes": 0.0,
+      "checkpoint": "checkpoints/model_000.npz",
+      "action": null,
+      "image_id": null,
+      "test_metrics_available_to_selector": false,
+      "risk": 0.152849381895158,
+      "per_specimen": {
+        "synthetic_specimen_0007": {
+          "risk_sum": 0.11190735475760653,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0007"
+          ],
+          "risk": 0.11190735475760653,
+          "reference_sha256": "fe30e2cca5ccb0175babf4411203fb867703f63ec9b3ca88171684d78db58d4d"
+        },
+        "synthetic_specimen_0020": {
+          "risk_sum": 0.05132299270072993,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 1,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0020"
+          ],
+          "risk": 0.05132299270072993,
+          "reference_sha256": "22204da2fad9e71a7c262898cc32002398a23a393c4303532efa01e157c78b0b"
+        },
+        "synthetic_specimen_0045": {
+          "risk_sum": 0.14558590295491253,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0045"
+          ],
+          "risk": 0.14558590295491253,
+          "reference_sha256": "8fe271140477a306f4a556b97d6b2503afe4f6117b0eaac907a9bb4b0b6fa69f"
+        },
+        "synthetic_specimen_0061": {
+          "risk_sum": 0.11011589179695346,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0061"
+          ],
+          "risk": 0.11011589179695346,
+          "reference_sha256": "2e0c46a32d30887662478d39398a0f6cf6e15a316c775c2245f84e9020c2b362"
+        },
+        "synthetic_specimen_0070": {
+          "risk_sum": 0.23280575539568343,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 1,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0070"
+          ],
+          "risk": 0.23280575539568343,
+          "reference_sha256": "4c5613a2f72b28520b86afd01aa21aa288123b3586c30bb8d1a889e4145d32ed"
+        },
+        "synthetic_specimen_0076": {
+          "risk_sum": 0.2690281583671927,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0076"
+          ],
+          "risk": 0.2690281583671927,
+          "reference_sha256": "84ed494a640473d3801dbb57ba92368d0da006e4e69065205c9f86b1fd3437f6"
+        },
+        "synthetic_specimen_0088": {
+          "risk_sum": 0.0658983666061706,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 1,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0088"
+          ],
+          "risk": 0.0658983666061706,
+          "reference_sha256": "60c663c91610fb7b5371e92c5694d63f91311facf8ec9d6d305f5a5f1a7c50d5"
+        },
+        "synthetic_specimen_0101": {
+          "risk_sum": 0.14778422918642184,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0101"
+          ],
+          "risk": 0.14778422918642184,
+          "reference_sha256": "fcdfeee67bfb110e418596ec2f79eee8eedeeb0e5582a90220b4d21a3c3680b0"
+        },
+        "synthetic_specimen_0105": {
+          "risk_sum": 0.17172413793103447,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0105"
+          ],
+          "risk": 0.17172413793103447,
+          "reference_sha256": "dcb80e060d56cf082bcc6aa232efaffcf224c6564023b560c6d37bb0f2ae3068"
+        },
+        "synthetic_specimen_0107": {
+          "risk_sum": 0.25245177614681696,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 1,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0107"
+          ],
+          "risk": 0.25245177614681696,
+          "reference_sha256": "43d516cf7373d5cbeaa0f1675e5f486b87ed5a9e36150f547a404060e3fc9ffa"
+        },
+        "synthetic_specimen_0114": {
+          "risk_sum": 0.2975340403294768,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0114"
+          ],
+          "risk": 0.2975340403294768,
+          "reference_sha256": "1ce5bb04afb877d029de7d1f1e4f252476ffd0bf4a22e1ce438000e2efc7c8c4"
+        },
+        "synthetic_specimen_0134": {
+          "risk_sum": 0.14558590295491253,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0134"
+          ],
+          "risk": 0.14558590295491253,
+          "reference_sha256": "cd47eb1466168a7662b6e1e1e6119a5cece581ac1360d231a4bacc7290cc6c41"
+        },
+        "synthetic_specimen_0135": {
+          "risk_sum": 0.18745800987632627,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 1,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 1,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0135"
+          ],
+          "risk": 0.18745800987632627,
+          "reference_sha256": "bf3079a91b731744a0c3dd790dcef6b6af5bc1a29752bd3224e563ab272da06c"
+        },
+        "synthetic_specimen_0138": {
+          "risk_sum": 0.14558590295491253,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0138"
+          ],
+          "risk": 0.14558590295491253,
+          "reference_sha256": "18f2d2678a7da8f969ffe2c1eae2d485f366762605d8fd028b55ba1fc4ae351e"
+        },
+        "synthetic_specimen_0154": {
+          "risk_sum": 0.03755389365608023,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0154"
+          ],
+          "risk": 0.03755389365608023,
+          "reference_sha256": "cda3486ae220c3912535d854c1a843fbc1f5126463310cd4edf8ae3d1c0288a3"
+        },
+        "synthetic_specimen_0162": {
+          "risk_sum": 0.07324779470729752,
+          "image_count": 1,
+          "cohort_images": 1,
+          "critical_misses": 0,
+          "critical_images": 0,
+          "false_clears": 0,
+          "defect_images": 1,
+          "critical_instances_matched": 0,
+          "critical_instances": 0,
+          "normal_false_alarms": 0,
+          "normal_images": 0,
+          "missing_predictions": 0,
+          "known_pixels": 2304,
+          "unknown_pixels": 0,
+          "image_ids": [
+            "synthetic_image_0162"
+          ],
+          "risk": 0.07324779470729752,
+          "reference_sha256": "36aaecd840000b0656bf337d24e9088590a3bde623711389191550c133b17254"
+        }
+      },
+      "critical_miss_rate": 0.0,
+      "false_clear_rate": 0.0
+    }
+  ],
+  "real_training_or_human_annotation_performed": false,
+  "test_feedback_used_for_selection": false,
+  "interpretation": "Software-test trajectory only; independent final evaluation occurs after selection is frozen."
+}

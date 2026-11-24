@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public image and visible multi-rater annotations; JSONL record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "image_id",
+    "image_path",
+    "specimen_id",
+    "weld_id",
+    "source_image_id",
+    "device_id",
+    "site_id",
+    "split",
+    "width",
+    "height",
+    "is_synthetic",
+    "initial_labeled",
+    "annotations",
+    "available_actions",
+    "action_quotes_minutes"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specimen_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "weld_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "site_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acquisition_session": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "split": {
+      "enum": [
+        "seed_train",
+        "policy_train",
+        "policy_val",
+        "reward",
+        "acquisition_pool",
+        "detector_val",
+        "test",
+        "device_test"
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "height": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "initial_labeled": {
+      "type": "boolean"
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "annotator_id",
+          "read_id",
+          "labelmap_path",
+          "is_repeat"
+        ],
+        "properties": {
+          "annotator_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "read_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "labelmap_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "is_repeat": {
+            "type": "boolean"
+          },
+          "uncertainty": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "available_actions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "new_image",
+          "boundary",
+          "missing",
+          "class",
+          "review",
+          "reimage"
+        ]
+      }
+    },
+    "action_quotes_minutes": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "new_image",
+          "boundary",
+          "missing",
+          "class",
+          "review",
+          "reimage"
+        ]
+      },
+      "additionalProperties": {
+        "type": "number",
+        "exclusiveMinimum": 0
+      }
+    }
+  },
+  "not": {
+    "anyOf": [
+      {
+        "required": [
+          "ground_truth"
+        ]
+      },
+      {
+        "required": [
+          "true_class"
+        ]
+      },
+      {
+        "required": [
+          "corruption_type"
+        ]
+      },
+      {
+        "required": [
+          "repair_outcomes"
+        ]
+      },
+      {
+        "required": [
+          "potential_outcomes"
+        ]
+      },
+      {
+        "required": [
+          "latent_difficulty"
+        ]
+      },
+      {
+        "required": [
+          "simulation_error_mode"
+        ]
+      }
+    ]
+  },
+  "$comment": "Use scripts/validate_dataset.py for group transitivity, dimensions, distinct experts, path boundaries and declared action feasibility. This schema alone does not establish absence of leakage."
+}

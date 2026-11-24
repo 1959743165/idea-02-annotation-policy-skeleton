@@ -1,0 +1,19 @@
+{
+  "status": "PASS_CANDIDATE_ARCHIVE_INTEGRITY",
+  "timestamp_utc": "2026-11-07T16:04:31.499687+00:00",
+  "files": 2255,
+  "hashed_files": 2250,
+  "excluded_records": [
+    "checks/FILE_LIST.txt",
+    "checks/file_manifest.json",
+    "checks/package_integrity.json",
+    "checks/package_integrity_verify.json",
+    "checks/package_integrity_zip.json"
+  ],
+  "crc_passed": true,
+  "all_members_nonempty": true,
+  "all_manifest_sizes_and_hashes_match": true,
+  "candidate_sha256": "1cd2bab1d101e674ae1e8e924438eebeaef5e14e360b38ca3baecbeea8fc980b",
+  "note": "Candidate inspected before adding this excluded report. Final ZIP is re-built and independently checked again; its own hash is not stored inside itself.",
+  "real_training_or_expert_experiment_performed": false
+}

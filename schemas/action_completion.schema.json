@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Completed or failed human work; duration is charged in all cases",
+  "type": "object",
+  "required": [
+    "event_id",
+    "status",
+    "active_intervals",
+    "reason"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "failed",
+        "cancelled_after_work"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_intervals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "annotator_id",
+          "start_utc",
+          "end_utc"
+        ],
+        "properties": {
+          "annotator_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_utc": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "after_state_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_artifact_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_artifact_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "completed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "after_state_version",
+          "outcome_artifact_path",
+          "outcome_artifact_sha256"
+        ]
+      }
+    }
+  ],
+  "$comment": "Use import_human_action.py to verify actual artifact hash, elapsed active person time, per-person overlap and duplicate events. No reward is invented."
+}

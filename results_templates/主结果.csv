@@ -1,0 +1,17 @@
+status,strategy,horizon_person_minutes,n_independent_specimens,n_acquisition_blocks,n_detector_seeds,completed_actions,failed_actions,incremental_person_minutes,common_development_person_minutes,nAUC,nAUC_ci_low,nAUC_ci_high,risk_at_horizon,critical_miss_rate,critical_positive_images,false_clear_rate,any_positive_images,unknown_fraction,notes
+NOT_RUN_REAL_EXPERIMENT,initial_only,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,random,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,uncertainty_per_minute,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,disagreement_rule,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,cheapest,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_new_image,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_boundary,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_missing,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_class,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_review,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,fixed_reimage,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,learned_gain_per_minute,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,learned_gain_without_cost,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,without_disagreement,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,action_only,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算
+NOT_RUN_REAL_EXPERIMENT,no_propensity_weight,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,真实结果尚未取得；数字60仅预登记预算

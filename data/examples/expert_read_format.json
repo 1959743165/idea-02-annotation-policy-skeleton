@@ -1,0 +1,26 @@
+{
+  "annotator_id": "SYNTH_RATER_4",
+  "read_id": "read0",
+  "labelmap_path": "annotations/synthetic_image_0001_SYNTH_RATER_4_read0.png",
+  "is_repeat": false,
+  "uncertainty": 0.4624953412699868,
+  "provenance": "synthetic_rater_not_human",
+  "image_id": "synthetic_image_0001",
+  "specimen_id": "synthetic_specimen_0001",
+  "is_synthetic": true,
+  "parent_read_id": null,
+  "confidence": 0.5375046587300132,
+  "display_settings": {
+    "source_bit_depth": 8,
+    "window_level_protocol": "synthetic_normalized_demo_only"
+  },
+  "quality_assessment": {
+    "readable": "uncertain",
+    "reason": "Format demonstration; no real expert inspected this image."
+  },
+  "additional_information_requested": [
+    "higher_contrast_view"
+  ],
+  "active_intervals": [],
+  "note": "Intervals intentionally empty: no human work actually took place. A real completed action must contain actual active intervals."
+}

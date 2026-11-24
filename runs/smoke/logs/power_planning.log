@@ -1,0 +1,3 @@
+COMMAND ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "/workspace/scratch/f1485640658c/idea_02_annotation_revision/scripts/estimate_power.py", "--repetitions", "300", "--output", "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/power_PLANNING_NOT_OBSERVED.json"]
+EXIT 0
+{"status": "PLANNING_ASSUMPTIONS_NOT_EMPIRICAL_RESULTS", "analytic_approximation": {"complete_specimens": 126, "enrolled_specimens": 149}, "output": "/workspace/scratch/f1485640658c/tmp/idea02_revision_current_smoke/power_PLANNING_NOT_OBSERVED.json"}
